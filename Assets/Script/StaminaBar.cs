@@ -50,6 +50,9 @@ public class StaminaBar : MonoBehaviour
             currentStamina -= amount;
             staminaBar.value = currentStamina;
 
+            
+            staminaBar.gameObject.SetActive(true);
+
             if (regen != null)
                 StopCoroutine(regen);
 
@@ -69,6 +72,10 @@ public class StaminaBar : MonoBehaviour
         {
             currentStamina += maxStamina / 8;
             staminaBar.value = currentStamina;
+
+            
+            staminaBar.gameObject.SetActive(currentStamina < maxStamina);
+
             yield return regenTick;
         }
         regen = null;

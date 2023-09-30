@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (isSprinting && staminaBar.currentStamina > 0)
             {
-                // ใช้ rb.velocity เพื่อควบคุมเคลื่อนที่
+                
                 rb.velocity = moveMent.normalized * sprintSpeed;
             }
             else
