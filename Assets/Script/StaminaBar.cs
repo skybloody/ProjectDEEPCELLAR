@@ -30,11 +30,11 @@ public class StaminaBar : MonoBehaviour
     }
     private void Update()
     {
-
         if (player != null)
         {
             Vector3 playerScreenPos = Camera.main.WorldToScreenPoint(player.position + offset);
             staminaBar.transform.position = playerScreenPos;
+            staminaBar.gameObject.SetActive(true);
         }
         else
         {
@@ -73,9 +73,8 @@ public class StaminaBar : MonoBehaviour
             currentStamina += maxStamina / 8;
             staminaBar.value = currentStamina;
 
-            
-            staminaBar.gameObject.SetActive(currentStamina < maxStamina);
 
+            staminaBar.gameObject.SetActive(currentStamina < maxStamina);
             yield return regenTick;
         }
         regen = null;

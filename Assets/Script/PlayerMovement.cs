@@ -31,29 +31,24 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Vertical", moveMent.y);
         animator.SetFloat("Speed", moveMent.sqrMagnitude);
 
-
-        if (staminaBar != null)
+        if (Input.GetKey(KeyCode.LeftShift) && staminaBar.currentStamina > 0)
         {
-            if (Input.GetKey(KeyCode.LeftShift) && staminaBar.currentStamina > 0)
-            {
-                isSprinting = true;
-                staminaBar.UseStamina(1);
-            }
+            isSprinting = true;
+            staminaBar.UseStamina(1);
+        }
 
-            if (isSprinting && staminaBar.currentStamina > 0)
-            {
-                
-                rb.velocity = moveMent.normalized * sprintSpeed;
-            }
-            else
-            {
-                rb.velocity = moveMent.normalized * Speed;
-            }
+        if (isSprinting && staminaBar.currentStamina > 0)
+        {
+            rb.velocity = moveMent.normalized * sprintSpeed;
+        }
+        else
+        {
+            rb.velocity = moveMent.normalized * Speed;
+        }
 
-            if (Input.GetKeyUp(KeyCode.LeftShift))
-            {
-                isSprinting = false;
-            }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            isSprinting = false;
         }
     }
 }
