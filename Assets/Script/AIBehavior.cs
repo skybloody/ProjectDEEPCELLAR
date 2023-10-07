@@ -35,7 +35,7 @@ public class NewBehaviourScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Wall") || collision.CompareTag("Obstacle"))
+        if (collision.CompareTag("Obstacle"))
         {
             
             isAvoidingObstacle = true;
