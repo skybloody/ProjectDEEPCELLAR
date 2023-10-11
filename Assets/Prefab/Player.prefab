@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7302773022477506113}
   - component: {fileID: 1419120958168541390}
   - component: {fileID: 3587044517422734730}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: candleA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8917521371365750344}
   - component: {fileID: 3916324195531021638}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PontLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 95360876131083326}
   - component: {fileID: 4456180179227355551}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 5411641279318834680}
   - component: {fileID: 6832517613229270773}
   - component: {fileID: 2822461824191116269}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -519,4 +519,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   sprintSpeed: 5
-  animator: {fileID: 8439415593280842766}
