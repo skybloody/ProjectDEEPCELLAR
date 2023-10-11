@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 moveMent;
 
-    public Animator animator;
+   // public Animator animator;
     private bool isSprinting = false;
     private StaminaBar staminaBar;
 
@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         staminaBar = StaminaBar.instance;
     }
 
@@ -27,9 +27,10 @@ public class PlayerMovement : MonoBehaviour
     {
         moveMent.x = Input.GetAxisRaw("Horizontal");
         moveMent.y = Input.GetAxisRaw("Vertical");
-        animator.SetFloat("Horizontal", moveMent.x);
+       
+       /* animator.SetFloat("Horizontal", moveMent.x);
         animator.SetFloat("Vertical", moveMent.y);
-        animator.SetFloat("Speed", moveMent.sqrMagnitude);
+        animator.SetFloat("Speed", moveMent.sqrMagnitude);*/
 
         if (Input.GetKey(KeyCode.LeftShift) && staminaBar.currentStamina > 0)
         {
