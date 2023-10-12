@@ -14,7 +14,7 @@ public class EnemyFollow : MonoBehaviour
 
     void Start()
     {
-       // UDumb.SetActive(false);
+        UDumb.SetActive(false);
         target = FindObjectOfType<PlayerMovement>().transform;
     }
     public void Update()
