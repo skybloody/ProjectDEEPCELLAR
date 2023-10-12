@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FOV : MonoBehaviour
+public class Hiding : MonoBehaviour
 {
     public SpriteRenderer sr;
     public bool PlayerHide = false;
