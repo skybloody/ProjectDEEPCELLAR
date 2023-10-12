@@ -15,7 +15,7 @@ public class Hiding : MonoBehaviour
 
     public void Update()
     {
-        if (PlayerHide && Input.GetKeyDown(KeyCode.V))
+        if (PlayerHide && Input.GetMouseButton(0))
         {
             Physics2D.IgnoreLayerCollision(6, 7, true);
             sr.sortingOrder = 0;
@@ -24,7 +24,7 @@ public class Hiding : MonoBehaviour
         else
         {
             Physics2D.IgnoreLayerCollision(6, 7, false);
-            sr.sortingOrder = 0;
+            sr.sortingOrder = 2;
             PlayerHide = false;
         }
     }
