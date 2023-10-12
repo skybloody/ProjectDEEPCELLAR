@@ -67,7 +67,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 6
+  m_Radius: 7
 --- !u!114 &6384743373960626815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 844670643506590484}
   - component: {fileID: 5259772900538098531}
   - component: {fileID: 2835228219861325651}
-  - component: {fileID: 2328823921299779601}
+  - component: {fileID: 4256432558265785426}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
@@ -266,7 +266,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
---- !u!114 &2328823921299779601
+--- !u!114 &4256432558265785426
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  minRange: 0.5
+  minRange: 0.05
   maxRange: 5
   target: {fileID: 0}
   homePos: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7237650346682017079
 Transform:
   m_ObjectHideFlags: 0
@@ -383,7 +383,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 15
+  m_Radius: 3
 --- !u!114 &3567587519166340757
 MonoBehaviour:
   m_ObjectHideFlags: 0
