@@ -14,7 +14,7 @@ public class EnemyFollow : MonoBehaviour
 
     void Start()
     {
-        UDumb.SetActive(false);
+       // UDumb.SetActive(false);
         target = FindObjectOfType<PlayerMovement>().transform;
     }
     public void Update()
@@ -37,7 +37,6 @@ public class EnemyFollow : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, homePos.position, speed * Time.deltaTime);
     }
-<<<<<<< Updated upstream:Assets/Script/Enemy/EnemyFollow.cs
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name.Equals("Player"))
@@ -52,8 +51,4 @@ public class EnemyFollow : MonoBehaviour
             UDumb.SetActive(false);
         }
     }
-
-=======
-    
->>>>>>> Stashed changes:Assets/Script/Enemy/EnemyController.cs
 }
