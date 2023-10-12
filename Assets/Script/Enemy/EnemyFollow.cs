@@ -37,6 +37,7 @@ public class EnemyFollow : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, homePos.position, speed * Time.deltaTime);
     }
+<<<<<<< Updated upstream:Assets/Script/Enemy/EnemyFollow.cs
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name.Equals("Player"))
@@ -52,4 +53,7 @@ public class EnemyFollow : MonoBehaviour
         }
     }
 
+=======
+    
+>>>>>>> Stashed changes:Assets/Script/Enemy/EnemyController.cs
 }
