@@ -40,10 +40,10 @@ public class Enemy : MonoBehaviour, IDamageable, IEnemyMoveable, ITriggerCheckab
     {
         StateMachine.CurrentEnemyState.FrameUpdate();
     }
-    //private void FixedUpdate()
-    //{
-        //StateMachine.CurrentEnemyState.PhysicsUpdate();
-    //}
+    private void FixedUpdate()
+    {
+        StateMachine.CurrentEnemyState.PhysicsUpdate();
+    }
     public void Damege(float damageAmount)
     {
         CurrentHealth = damageAmount;

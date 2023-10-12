@@ -5,34 +5,36 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     public float speed;
-    private float waitTime;
-    public float startWaitTime;
+    public Transform[] patrolPoints;
+    public float waitTime;
+    int currentPointIndex;
 
-    public Transform moveSpots;
-    public float minX;
-    public float maxX;
-    public float minY;
-    public float maxY;
-
-    void Start()
+    bool once;
+    private void Update()
     {
-        waitTime = startWaitTime;
-        moveSpots.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        if (transform.position != patrolPoints[currentPointIndex].position)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].position, speed * Time.deltaTime);
+        }else
+        {
+            if(once == false) 
+            { 
+                once = true;
+                StartCoroutine(Wait()); 
+            }            
+        }
     }
 
-    void Update()
+    IEnumerator Wait()
     {
-        transform.position = Vector2.MoveTowards(transform.position, moveSpots.position, speed * Time.deltaTime);
-        if (Vector2.Distance(transform.position, moveSpots.position) < 0.2f)
+        yield return new WaitForSeconds(waitTime);
+        if (currentPointIndex + 1 < patrolPoints.Length) 
         {
-            if(waitTime <=0)
-            {
-                waitTime = startWaitTime;
-            }
-            else
-            {
-                waitTime -= Time.deltaTime;
-            }
+            currentPointIndex++;
+        }else
+        {
+            currentPointIndex = 0;
         }
+        once = false;
     }
 }
