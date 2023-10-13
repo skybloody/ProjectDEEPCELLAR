@@ -16,7 +16,7 @@ public class Hiding : MonoBehaviour
         
     }
 
-    void Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -31,7 +31,7 @@ public class Hiding : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+   public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name.Equals("Locker"))
         {
