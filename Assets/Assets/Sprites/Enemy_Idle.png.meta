@@ -113,9 +113,9 @@ TextureImporter:
       name: Enemy_Idle_0
       rect:
         serializedVersion: 2
-        x: 164
-        y: 1886
-        width: 157
+        x: 160
+        y: 1887
+        width: 141
         height: 357
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -135,8 +135,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 322
-        y: 1886
-        width: 157
+        y: 1887
+        width: 158
         height: 357
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -157,7 +157,7 @@ TextureImporter:
         serializedVersion: 2
         x: 480
         y: 1886
-        width: 157
+        width: 158
         height: 357
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -178,7 +178,7 @@ TextureImporter:
         serializedVersion: 2
         x: 650
         y: 1886
-        width: 154
+        width: 155
         height: 357
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -221,7 +221,7 @@ TextureImporter:
         x: 955
         y: 1886
         width: 160
-        height: 355
+        height: 357
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,8 +241,8 @@ TextureImporter:
         serializedVersion: 2
         x: 1115
         y: 1886
-        width: 171
-        height: 355
+        width: 170
+        height: 357
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,7 +262,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1286
         y: 1886
-        width: 184
+        width: 189
         height: 357
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -281,10 +281,10 @@ TextureImporter:
       name: Enemy_Idle_8
       rect:
         serializedVersion: 2
-        x: 1470
-        y: 1884
-        width: 156
-        height: 359
+        x: 1473
+        y: 1885
+        width: 153
+        height: 357
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,7 +305,7 @@ TextureImporter:
         x: 1626
         y: 1885
         width: 152
-        height: 358
+        height: 357
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -832,7 +832,7 @@ TextureImporter:
         width: 284
         height: 355
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -853,7 +853,7 @@ TextureImporter:
         width: 294
         height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
