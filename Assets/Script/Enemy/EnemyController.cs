@@ -10,7 +10,6 @@ public class EnemyFollow : MonoBehaviour
     public float maxRange;
     public Transform target;
     public Transform homePos;
-
     public GameObject UDumb;
 
     void Start()
@@ -47,6 +46,7 @@ public class EnemyFollow : MonoBehaviour
         {
             myAnim.SetBool("isMoving", false);
         }
+
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
