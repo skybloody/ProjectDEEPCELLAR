@@ -6,42 +6,51 @@ public class Hiding : MonoBehaviour
 {
     public SpriteRenderer sr;
     public bool PlayerHide = false;
-    public bool hiding = false;
+    private bool canMove = true;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
     }
 
-    public void Update()
+    void Update()
     {
-        if (PlayerHide && Input.GetMouseButton(0))
+        if (Input.GetKeyDown(KeyCode.R))
         {
+            ToggleHide();
+        }
+
+        if (PlayerHide && !canMove)
+        {
+            return;
+        }
+    }
+
+    void ToggleHide()
+    {
+        PlayerHide = !PlayerHide;
+
+        if (PlayerHide)
+        {
+
             Physics2D.IgnoreLayerCollision(6, 7, true);
             sr.sortingOrder = 0;
-            PlayerHide = true;
+            canMove = false;
         }
         else
         {
+
             Physics2D.IgnoreLayerCollision(6, 7, false);
             sr.sortingOrder = 2;
-            PlayerHide = false;
-        }
-    }
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.name.Equals("Locker"))
-        {
-            PlayerHide = true;
-        }
-    }
-    public void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.name.Equals("Locker"))
-        {
-            PlayerHide = false;
+            canMove = true;
         }
     }
 
-
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name.Equals("Locker"))
+        {
+            ToggleHide();
+        }
+    }
 }

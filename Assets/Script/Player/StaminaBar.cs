@@ -24,6 +24,7 @@ public class StaminaBar : MonoBehaviour
 
     void Start()
     {
+        staminaBar.gameObject.SetActive(false);
         currentStamina = maxStamina;
         staminaBar.maxValue = maxStamina;
         staminaBar.value = maxStamina;

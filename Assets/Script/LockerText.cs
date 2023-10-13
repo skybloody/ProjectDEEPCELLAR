@@ -25,7 +25,7 @@ public class LockerText : MonoBehaviour
 
         if (distance <= interactionDistance)
         {
-            messageText.text = "กด [LMB ค้าง] เพื่อซ่อน";
+            messageText.text = "[press \" R \" Hide]";
         }
         else
         {
