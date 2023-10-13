@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3921994681747417665}
   - component: {fileID: 3938274028864454816}
   - component: {fileID: -1751118310437269885}
+  - component: {fileID: 5781474944832140909}
   m_Layer: 0
   m_Name: table-research-lap
   m_TagString: Untagged
@@ -130,3 +131,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6, y: 0.6852902}
   m_EdgeRadius: 0
+--- !u!114 &5781474944832140909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469227115474848507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
