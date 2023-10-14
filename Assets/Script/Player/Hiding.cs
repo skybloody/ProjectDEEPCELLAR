@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Hiding : MonoBehaviour
 {
+    private bool isLocked = false;
     public SpriteRenderer sr;
     public bool PlayerHide = false;
-    private bool canMove = true;
+    
 
     
 
@@ -21,13 +22,14 @@ public class Hiding : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             ToggleHide();
+            if (isLocked)
+            {
+                UnlockPlayerPosition();
+            }
         }
-
-        if (PlayerHide && !canMove)
+        else
         {
-            Vector3 currentPosition = transform.position;
-            transform.position = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z);
-            return;
+            LockPlayerPosition();
         }
     }
 
@@ -46,13 +48,21 @@ public class Hiding : MonoBehaviour
         if (PlayerHide){
             Physics2D.IgnoreLayerCollision(6, 7, true);
             sr.sortingOrder = 0;
-            canMove = false; 
+            
         }
         else{
             Physics2D.IgnoreLayerCollision(6, 7, false);
             sr.sortingOrder = 2;
-            canMove = true;
+            
         }
+    }
+    void LockPlayerPosition()
+    {
+        isLocked = true;
+    }
+    void UnlockPlayerPosition()
+    { 
+     isLocked = false;
     }
 }
 
