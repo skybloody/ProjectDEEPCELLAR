@@ -11,6 +11,9 @@ public class LockerText : MonoBehaviour
     public TextMeshProUGUI messageText;
 
     public float interactionDistance = 2f;
+    public float displayTime = 3f;
+
+    private bool displayMessage = false;
 
 
     void Start()
@@ -25,11 +28,22 @@ public class LockerText : MonoBehaviour
 
         if (distance <= interactionDistance)
         {
-            messageText.text = "[press \" R \" Hide]";
+            if (!displayMessage)
+            {
+                StartCoroutine(DisplayMessageForTime("[press \" R \" Hide]", displayTime));
+                displayMessage = true;
+            }
         }
         else
         {
             messageText.text = "";
+            displayMessage = false;
         }
+    }
+    IEnumerator DisplayMessageForTime(string text, float time)
+    {
+        messageText.text = text;
+        yield return new WaitForSeconds(time);
+        messageText.text = "";
     }
 }

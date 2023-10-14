@@ -1,22 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class EnemyFollow : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
+    Hiding hiding;
     private Animator myAnim;
     public float speed;
     public float minRange;
     public float maxRange;
     public Transform target;
     public Transform homePos;
-    public GameObject UDumb;
+
+
 
     void Start()
     {
-        UDumb.SetActive(false);
         myAnim = GetComponent<Animator>();
         target = FindObjectOfType<PlayerMovement>().transform;
+        
     }
     public void Update()
     {
@@ -48,18 +51,5 @@ public class EnemyFollow : MonoBehaviour
         }
 
     }
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.name.Equals("Player"))
-        {
-            UDumb.SetActive(true);
-        }
-    }
-    public void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.name.Equals("Player"))
-        {
-            UDumb.SetActive(false);
-        }
-    }
+    
 }
