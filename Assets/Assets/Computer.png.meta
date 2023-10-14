@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d30b3617bb37369458b2ff16f7fddb81
+guid: 74d99837e4e65f54786cf3fc5e7cf640
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,9 +43,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -69,19 +69,6 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -121,49 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Floor_0
-      rect:
-        serializedVersion: 2
-        x: 664
-        y: 818
-        width: 104
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25eb29bab05cf6c4b81f7265cb98d099
-      internalID: -523537710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_1
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 1956
-        height: 1019
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 586b44b6f0948264591d96bd1ace78c8
-      internalID: -601574581
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -174,46 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Floor_0: -523537710
-      Floor_1: -601574581
-      Floor_10: -1900767881
-      Floor_11: -894358417
-      Floor_12: -636477862
-      Floor_13: 966922535
-      Floor_14: -915021436
-      Floor_15: -950527674
-      Floor_16: 1663166287
-      Floor_17: 1993018998
-      Floor_18: -1868309974
-      Floor_19: 1485456665
-      Floor_2: -900745807
-      Floor_20: 411632967
-      Floor_21: 1778277196
-      Floor_22: 853805559
-      Floor_23: 10123125
-      Floor_24: -1649818137
-      Floor_25: -914827247
-      Floor_26: 1399863844
-      Floor_27: 1627326250
-      Floor_28: -857183265
-      Floor_29: -1935222381
-      Floor_3: -544386155
-      Floor_30: 1027295417
-      Floor_31: 376469642
-      Floor_32: -1680803089
-      Floor_33: 1499304749
-      Floor_34: 1370367082
-      Floor_35: -2031185552
-      Floor_36: -171875099
-      Floor_37: 1955915244
-      Floor_38: 1938069057
-      Floor_4: 2051681045
-      Floor_5: -1408744242
-      Floor_6: -1811694471
-      Floor_7: -1377173061
-      Floor_8: 293196639
-      Floor_9: -1022920909
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
