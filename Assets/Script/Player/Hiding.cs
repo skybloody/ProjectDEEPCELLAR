@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hiding : MonoBehaviour
 {
-    private bool isLocked = false;
+    
     public SpriteRenderer sr;
     public bool PlayerHide = false;
     
@@ -22,15 +22,9 @@ public class Hiding : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             ToggleHide();
-            if (isLocked)
-            {
-                UnlockPlayerPosition();
-            }
+
         }
-        else
-        {
-            LockPlayerPosition();
-        }
+      
     }
 
    public void OnTriggerEnter2D(Collider2D other)
@@ -55,14 +49,6 @@ public class Hiding : MonoBehaviour
             sr.sortingOrder = 2;
             
         }
-    }
-    void LockPlayerPosition()
-    {
-        isLocked = true;
-    }
-    void UnlockPlayerPosition()
-    { 
-     isLocked = false;
     }
 }
 

@@ -9,6 +9,8 @@ public class AItest : MonoBehaviour
     public Transform player; // Player
     public float moveSpeed = 5.0f;
     public float followDistance = 3.0f; // ระยะที่ Player ต้องอยู่ใกล้ AI ถึงจะตาม
+    
+
 
     private NavMeshAgent agent;
     private int currentWaypoint = 0;
