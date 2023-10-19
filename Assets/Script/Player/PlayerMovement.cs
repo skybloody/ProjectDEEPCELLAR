@@ -9,8 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float Speed = 1f;
     public float sprintSpeed = 5f;
     AudioSource audiosource;
-    public LayerMask enemyLayer;
-    public Transform enemyTransform;
+
 
 
     public Vector2 moveMent;
@@ -32,19 +31,6 @@ public class PlayerMovement : MonoBehaviour
     {
         moveMent.x = Input.GetAxisRaw("Horizontal");
         moveMent.y = Input.GetAxisRaw("Vertical");
-
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, enemyTransform.position - transform.position, Mathf.Infinity, enemyLayer);
-
-        if (hit.collider != null && hit.collider.CompareTag("Enemy"))
-        {
-            // Player มองเห็นศัตรู
-            // ทำสิ่งที่คุณต้องการทำเมื่อ Player มองเห็นศัตรู
-        }
-        else
-        {
-            // Player ไม่มองเห็นศัตรู
-            // ทำสิ่งที่คุณต้องการทำเมื่อ Player ไม่มองเห็นศัตรู
-        }
 
         /* animator.SetFloat("Horizontal", moveMent.x);
          animator.SetFloat("Vertical", moveMent.y);
