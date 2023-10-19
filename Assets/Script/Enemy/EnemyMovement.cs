@@ -1,26 +1,28 @@
-using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UIElements;
+
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] Transform target;
+    public Transform player;
+    public float Speed;
     
-    NavMeshAgent agent;
+    private NavMeshAgent agent;    
 
-    private void Awake()
+
+    void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
     {
-        agent.SetDestination(target.position);
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
     }
+
 }

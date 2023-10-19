@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour
 {
     Hiding hiding;
 
-    
+
 
     private Animator myAnim;
     public float speed;
@@ -15,6 +15,8 @@ public class EnemyController : MonoBehaviour
     public float maxRange;
     public Transform target;
     public Transform homePos;
+    public SpriteRenderer spriteRenderer;
+    private Rigidbody2D body;
 
     public Transform[] waypoints; // Waypoints ที่ AI จะตาม
     public Transform player; // Player
@@ -26,7 +28,7 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
         myAnim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = false;
@@ -39,6 +41,7 @@ public class EnemyController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, 0);
         Destination();
         AvoidWalls();
+        spriteRenderer.flipX = body.velocity.x < 0f;
 
         if (IsPlayerVisible(maxRange))
         {
