@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: a0940b71489cf194eb925d4676dbb01a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Floor_R2_Rock_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1153
+        width: 94
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f539f9c648c324caf8435c7dc957d8
+      internalID: -1193147623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_R2_Rock_10
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 771
+        width: 39
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e70f7bc7f7b9f04d8ce045d121d78e3
+      internalID: 51205689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_R2_Rock_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1036
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191373357f9964947b612e925f5aab92
+      internalID: -184251491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Floor_R2_Rock_0: -1537099147
+      Floor_R2_Rock_1: -337431053
+      Floor_R2_Rock_10: 51205689
+      Floor_R2_Rock_11: -2141692114
+      Floor_R2_Rock_12: -2114577244
+      Floor_R2_Rock_13: 1890146545
+      Floor_R2_Rock_14: 1736827167
+      Floor_R2_Rock_15: -184251491
+      Floor_R2_Rock_16: 63956535
+      Floor_R2_Rock_17: -1561817428
+      Floor_R2_Rock_18: 928670435
+      Floor_R2_Rock_19: -1414694030
+      Floor_R2_Rock_2: -1193147623
+      Floor_R2_Rock_20: 186481486
+      Floor_R2_Rock_21: -1680888809
+      Floor_R2_Rock_22: -1199285352
+      Floor_R2_Rock_23: 732883171
+      Floor_R2_Rock_24: 1636776808
+      Floor_R2_Rock_25: 1555260915
+      Floor_R2_Rock_26: 551318951
+      Floor_R2_Rock_27: -2112795866
+      Floor_R2_Rock_28: 246018684
+      Floor_R2_Rock_29: -82974141
+      Floor_R2_Rock_3: -1451459053
+      Floor_R2_Rock_30: 323246517
+      Floor_R2_Rock_31: 310485850
+      Floor_R2_Rock_32: 1891780239
+      Floor_R2_Rock_33: 807129461
+      Floor_R2_Rock_34: 571171454
+      Floor_R2_Rock_35: -1120438022
+      Floor_R2_Rock_36: -773419392
+      Floor_R2_Rock_37: -295479783
+      Floor_R2_Rock_38: -1863895274
+      Floor_R2_Rock_39: 1019597229
+      Floor_R2_Rock_4: 616475150
+      Floor_R2_Rock_40: 1583229081
+      Floor_R2_Rock_41: -1329442145
+      Floor_R2_Rock_42: -1082995521
+      Floor_R2_Rock_43: 303432884
+      Floor_R2_Rock_44: 1775238062
+      Floor_R2_Rock_45: -2002197604
+      Floor_R2_Rock_46: -198222840
+      Floor_R2_Rock_47: -1573648404
+      Floor_R2_Rock_48: -362034131
+      Floor_R2_Rock_49: -489293622
+      Floor_R2_Rock_5: 542919786
+      Floor_R2_Rock_50: -1139158692
+      Floor_R2_Rock_51: 391764743
+      Floor_R2_Rock_52: 241241926
+      Floor_R2_Rock_53: -1332673026
+      Floor_R2_Rock_54: 63745160
+      Floor_R2_Rock_55: 1025993048
+      Floor_R2_Rock_56: 2011118970
+      Floor_R2_Rock_57: 880929935
+      Floor_R2_Rock_58: 1281240942
+      Floor_R2_Rock_59: -1435500885
+      Floor_R2_Rock_6: -1851096776
+      Floor_R2_Rock_60: 2116189814
+      Floor_R2_Rock_61: -1881247349
+      Floor_R2_Rock_62: 581930564
+      Floor_R2_Rock_63: 1644098370
+      Floor_R2_Rock_64: -534629918
+      Floor_R2_Rock_65: -1135015437
+      Floor_R2_Rock_66: 1530431500
+      Floor_R2_Rock_67: 125307019
+      Floor_R2_Rock_68: -1648530844
+      Floor_R2_Rock_69: -902294884
+      Floor_R2_Rock_7: -725220191
+      Floor_R2_Rock_70: -1281320064
+      Floor_R2_Rock_71: -1295717828
+      Floor_R2_Rock_72: 420173028
+      Floor_R2_Rock_73: -1478402766
+      Floor_R2_Rock_74: -234677528
+      Floor_R2_Rock_8: -48035941
+      Floor_R2_Rock_9: 1829531543
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
