@@ -1,28 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class AItest : MonoBehaviour
 {
-    public Transform[] waypoints;
+    //=====================================//
     public Transform player;
+    public Transform DetectionPoint;
+    public Transform[] waypoints;
+    //=====================================//
     public float Speed = 5.0f;
     public float followDistance = 3.0f;
     public float detectionRadius = 2.0f;
-    public Transform soundDetectionPoint;
-    //private Vector3 originalPosition;
+    //=====================================//
     public LayerMask playerLayer;
-
-
+    private Vector3 originalPosition;
+    private Vector3 lastKnownPosition;
+    private int currentWaypointIndex;
+    //=====================================//
+    private Animator myAnim;
     private NavMeshAgent agent;
-    private int currentWaypoint = 0;
+    //=====================================//
+    //private int currentWaypoint = 0;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = false;
-        //FindPlayer();
+        originalPosition = transform.position;
+        lastKnownPosition = originalPosition;
+
+        waypoints = GameObject.FindGameObjectsWithTag("Waypoint")
+            .Select(waypoint => waypoint.transform)
+            .OrderBy(waypoint => waypoint.GetSiblingIndex())
+            .ToArray();
+
+        currentWaypointIndex = 0; // กำหนด Waypoint แรกเป็น Waypoint 0
+        SetDestinationToWaypoint();
         //GoToNextWaypoint();
     }
 
@@ -44,25 +60,34 @@ public class AItest : MonoBehaviour
         if (!agent.pathPending && agent.remainingDistance < 0.1f)
         {
             GoToNextWaypoint();
-        }
+        }*/
 
-        float distance = Vector2.Distance(soundDetectionPoint.position, player.transform.position);
+        /*float distance = Vector2.Distance(soundDetectionPoint.position, player.transform.position);
         if (distance <= detectionRadius)
         {
             agent.SetDestination(player.position);
         }*/
-        Collider2D playerCollider = Physics2D.OverlapCircle(transform.position, detectionRadius, playerLayer);
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius, playerLayer);
 
-        if (playerCollider != null)
+
+        if (hitColliders.Length > 0)
         {
             // มีผู้เล่นอยู่ในรัศมี ให้เคลื่อนที่ไปหาผู้เล่น
+            lastKnownPosition = player.position;
             agent.SetDestination(player.position);
         }
         else
         {
-            // ไม่มีผู้เล่นในรัศมี ให้หาจุดล่าสุดที่ตรวจสอบแล้วค่อยกลับไปที่เดิม
-            //agent.SetDestination(originalPosition);
+            if (agent.remainingDistance < 0.1f) // ถ้าศัตรูเคลื่อนที่มาถึง Waypoint ปัจจุบัน
+            {
+                currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length; // เลื่อก Waypoint ถัดไป
+                SetDestinationToWaypoint(); // ตั้งค่า NavMeshAgent ไปยัง Waypoint ใหม่
+            }
         }
+    }
+    void SetDestinationToWaypoint()
+    {
+        agent.SetDestination(waypoints[currentWaypointIndex].position); // ตั้งค่า NavMeshAgent ไปยัง Waypoint ปัจจุบัน
     }
 
     /*void GoToNextWaypoint()
@@ -88,12 +113,7 @@ public class AItest : MonoBehaviour
             }
         }
     }*/
-    private void FindPlayer()
-    {
-        // หาตำแหน่งของผู้เล่นและกำหนดให้เป็นเป้าหมายของ NavMesh Agent
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        agent.SetDestination(player.position);
-    }
+
 
     private void OnDrawGizmosSelected()
     {
