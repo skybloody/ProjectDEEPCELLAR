@@ -1,0 +1,1051 @@
+fileFormatVersion: 2
+guid: 19b29379f7750a148b1a3fe61c1cfb99
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hunt_(Run)_0
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1206
+        width: 107
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c1d57238f1f934786bd706f16b3592
+      internalID: 510385388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_1
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1206
+        width: 110
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33300d878b654b4096e523427cb0e96
+      internalID: 1081143404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_2
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1206
+        width: 110
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bea0836f8073b942863b9a7dd60a7f8
+      internalID: -294385527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_3
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 1203
+        width: 110
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff89c07fbabf6bc4e98fda5041aed290
+      internalID: 1022594618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_4
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1206
+        width: 110
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7206499990c766e46a72ef45de841fe2
+      internalID: 1827355281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_5
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 1206
+        width: 113
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92e254b94adbb74f8fc8f438dd929e0
+      internalID: 243990699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_6
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1206
+        width: 114
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25853ed24fbf07b47856df18fcd4c271
+      internalID: -460503678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_7
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1206
+        width: 116
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff55918f2df85e4fae27060c609ae41
+      internalID: -1540886543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_8
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 1206
+        width: 144
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccf28d167a0918479895094baf80179
+      internalID: -1670681367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_9
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 1206
+        width: 149
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0198b1b936257d4b9923c183daeee8c
+      internalID: 851806642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_10
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 1206
+        width: 137
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707a87283391643488f380cefa139acd
+      internalID: -656511249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_11
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 1218
+        width: 166
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9548d76e8eb0f24c9d10eb3297aa8c7
+      internalID: -501067981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_12
+      rect:
+        serializedVersion: 2
+        x: 3222
+        y: 1218
+        width: 165
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9ed2ab87a941146bd319370e4f5555
+      internalID: -18815839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_13
+      rect:
+        serializedVersion: 2
+        x: 3495
+        y: 1206
+        width: 154
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d86ee547bbd5c419706739078bbc6a
+      internalID: -461063063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_14
+      rect:
+        serializedVersion: 2
+        x: 3759
+        y: 1206
+        width: 148
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d693910534611d0499f9f57464279886
+      internalID: 794086489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_15
+      rect:
+        serializedVersion: 2
+        x: 4025
+        y: 1206
+        width: 134
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93227a6886a415409466aea6f20f791
+      internalID: 2095363052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_16
+      rect:
+        serializedVersion: 2
+        x: 4279
+        y: 1206
+        width: 152
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbce231ae0e784846a74572b6cedbac2
+      internalID: -698420619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_17
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 915
+        width: 230
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7629a7efba4340b438f2a71c2ec8af2a
+      internalID: -625472939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_18
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 912
+        width: 227
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea80c1736165f14cb6b7415f55b11ab
+      internalID: 1389127606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_19
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 915
+        width: 229
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f096d741b2570794a87094b56e51e658
+      internalID: 1482755132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_20
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 920
+        width: 227
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3960dbca469e3944beefd64a317ab79
+      internalID: -779922053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_21
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 920
+        width: 227
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be53d51bbc3ae1d469f9ef2208a77c0b
+      internalID: -476884646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_22
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 615
+        width: 215
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0af1b8fad01c9499d198907c81eb4c
+      internalID: 2063060402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_23
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 619
+        width: 216
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f08662832df9c94c94663fc44acfe06
+      internalID: 1227701184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_24
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 619
+        width: 214
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6dd7edd4ce2a94482ee5807163c6c8
+      internalID: 1501977641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_25
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 619
+        width: 203
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b039c2d53f7759043a69998eaf23143c
+      internalID: 516455897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_26
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 622
+        width: 200
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59917d090d418ca4587423dbffa7d7ae
+      internalID: 1723224279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_27
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 324
+        width: 181
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7330bf6f40f418647a0a99dc7cbd541d
+      internalID: 2074242835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_28
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 324
+        width: 182
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067ec4f072d0d6c4a98662fcd6863cba
+      internalID: -1691727904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_29
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 321
+        width: 180
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002250441562ab84a99c9cdd01d1edca
+      internalID: 190461899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_30
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 321
+        width: 181
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f817354313d47949905fbe96bed60df
+      internalID: 1593805247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_31
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 319
+        width: 180
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42c8f2b7ecd0b548a9272b9f9dc2db0
+      internalID: 2002305524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_32
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 322
+        width: 183
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057e5ac8a61ff404e85430739f72b2cb
+      internalID: -1444938123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_33
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 324
+        width: 181
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f25c1f9ee7eb54ca39f9e2e9a5e882
+      internalID: -1366057888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_34
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 321
+        width: 180
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643bcf18b0f161b43b7accd62b0805e3
+      internalID: 300970232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_35
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 319
+        width: 181
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66377f37691ad749a66a0849b8b3fc1
+      internalID: 1318746609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_36
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 21
+        width: 198
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dd8197d84fe1b42816c17eb052d7fc
+      internalID: -565707227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_37
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 21
+        width: 199
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e56903bc7b64f846845729c43ee481d
+      internalID: 525062737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_38
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 18
+        width: 199
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da850486c1d1274993b5a0d990e5b06
+      internalID: -1178962686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_39
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 25
+        width: 194
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb87cef44def26438015ed2b333d4b7
+      internalID: 155549993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_40
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 33
+        width: 190
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e384f64ee7e7aa4380e58974a29b44f
+      internalID: -211779367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_(Run)_41
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 38
+        width: 190
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5fc226e11e305c499ddb17a851dfcf5
+      internalID: -1871608322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Hunt_(Run)_0: 510385388
+      Hunt_(Run)_1: 1081143404
+      Hunt_(Run)_10: -656511249
+      Hunt_(Run)_11: -501067981
+      Hunt_(Run)_12: -18815839
+      Hunt_(Run)_13: -461063063
+      Hunt_(Run)_14: 794086489
+      Hunt_(Run)_15: 2095363052
+      Hunt_(Run)_16: -698420619
+      Hunt_(Run)_17: -625472939
+      Hunt_(Run)_18: 1389127606
+      Hunt_(Run)_19: 1482755132
+      Hunt_(Run)_2: -294385527
+      Hunt_(Run)_20: -779922053
+      Hunt_(Run)_21: -476884646
+      Hunt_(Run)_22: 2063060402
+      Hunt_(Run)_23: 1227701184
+      Hunt_(Run)_24: 1501977641
+      Hunt_(Run)_25: 516455897
+      Hunt_(Run)_26: 1723224279
+      Hunt_(Run)_27: 2074242835
+      Hunt_(Run)_28: -1691727904
+      Hunt_(Run)_29: 190461899
+      Hunt_(Run)_3: 1022594618
+      Hunt_(Run)_30: 1593805247
+      Hunt_(Run)_31: 2002305524
+      Hunt_(Run)_32: -1444938123
+      Hunt_(Run)_33: -1366057888
+      Hunt_(Run)_34: 300970232
+      Hunt_(Run)_35: 1318746609
+      Hunt_(Run)_36: -565707227
+      Hunt_(Run)_37: 525062737
+      Hunt_(Run)_38: -1178962686
+      Hunt_(Run)_39: 155549993
+      Hunt_(Run)_4: 1827355281
+      Hunt_(Run)_40: -211779367
+      Hunt_(Run)_41: -1871608322
+      Hunt_(Run)_5: 243990699
+      Hunt_(Run)_6: -460503678
+      Hunt_(Run)_7: -1540886543
+      Hunt_(Run)_8: -1670681367
+      Hunt_(Run)_9: 851806642
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
