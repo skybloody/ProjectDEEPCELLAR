@@ -22,6 +22,8 @@ public class AItest : MonoBehaviour
     //=====================================//
     private Animator myAnim;
     private NavMeshAgent agent;
+    private bool PlayerHide;
+
     //=====================================//
     //private int currentWaypoint = 0;
 
@@ -68,6 +70,16 @@ public class AItest : MonoBehaviour
             agent.SetDestination(player.position);
         }*/
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius, playerLayer);
+
+        if (!PlayerHide)
+        {
+            // ตรวจสอบการชนกับ Player ปกติ
+        }
+        else
+        {
+            // ไม่ตรวจสอบการชนกับ Player ที่ถูกซ่อน
+            Physics2D.IgnoreLayerCollision(gameObject.layer, playerLayer, true);
+        }
 
 
         if (hitColliders.Length > 0)
