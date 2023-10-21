@@ -11,6 +11,12 @@ public class PlayerMovement : MonoBehaviour
     AudioSource audiosource;
 
 
+    private SpriteRenderer sr;
+    private bool playerHidden = false;
+    private bool canInteract = false;
+    public LayerMask hiddenLayer;
+    private Vector3 hiddenPosition;
+
 
     public Vector2 moveMent;
 
@@ -22,40 +28,90 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         //animator = GetComponent<Animator>();
         audiosource = GetComponent<AudioSource>();
         staminaBar = StaminaBar.instance;
+       
     }
 
     void Update()
     {
+
         moveMent.x = Input.GetAxisRaw("Horizontal");
         moveMent.y = Input.GetAxisRaw("Vertical");
+
+        if (!playerHidden)  // เพิ่มเงื่อนไขนี้เพื่อตรวจสอบว่าผู้เล่นไม่ได้ซ่อนตัว
+        {
+            Run();
+        }
+
+        if (canInteract && Input.GetKeyDown(KeyCode.E))
+        {
+            TogglePlayerHide();
+        }
+
 
         /* animator.SetFloat("Horizontal", moveMent.x);
          animator.SetFloat("Vertical", moveMent.y);
          animator.SetFloat("Speed", moveMent.sqrMagnitude);*/
-
-        if (Input.GetKey(KeyCode.LeftShift) && staminaBar.currentStamina > 0)
+    }
+    private void Run()
+    {
+        if (!playerHidden)  // เพิ่มเงื่อนไขนี้เพื่อตรวจสอบว่าผู้เล่นไม่ได้ซ่อนตัว
         {
-            isSprinting = true;
-            staminaBar.UseStamina(1);
+            if (Input.GetKey(KeyCode.LeftShift) && staminaBar.currentStamina > 0)
+            {
+                isSprinting = true;
+                staminaBar.UseStamina(1);
+            }
+
+            if (isSprinting && staminaBar.currentStamina > 0)
+            {
+                rb.velocity = moveMent.normalized * sprintSpeed;
+            }
+            else
+            {
+                rb.velocity = moveMent.normalized * Speed;
+            }
+
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                isSprinting = false;
+            }
         }
+    }
+    private void TogglePlayerHide()
+    {
+        playerHidden = !playerHidden;
 
-        if (isSprinting && staminaBar.currentStamina > 0)
+        if (playerHidden)
         {
-            rb.velocity = moveMent.normalized * sprintSpeed;
+            sr.sortingOrder = -1;
+            gameObject.layer = hiddenLayer;
             
         }
         else
         {
-            rb.velocity = moveMent.normalized * Speed;
-           
+            sr.sortingOrder = 2;
+            gameObject.layer = LayerMask.NameToLayer("Player");
+            
+            
         }
-
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Locker"))
         {
-            isSprinting = false;
+            canInteract = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Locker"))
+        {
+            canInteract = false;
         }
     }
 }

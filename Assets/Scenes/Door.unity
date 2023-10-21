@@ -221,12 +221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8c4ed17e176444b97ccf9cabc60d06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sr: {fileID: 0}
-  PlayerHide: 0
-  hiddenPlayerLayer: 0
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &233487633
 MonoBehaviour:
   m_ObjectHideFlags: 0

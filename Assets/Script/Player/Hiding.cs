@@ -1,70 +1,69 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Cinemachine.CinemachineOrbitalTransposer;
 
 public class Hiding : MonoBehaviour
 {
-    
-    public SpriteRenderer sr;
-    public bool PlayerHide = false;
+    private SpriteRenderer sr;
+    private bool playerHidden = false;
+    private bool canInteract = false;
+    public LayerMask hiddenLayer;
+    private Vector3 hiddenPosition;
 
-    public int hiddenPlayerLayer;
-    public LayerMask wallLayer;
-    private int PlayerLayer;
+    private Rigidbody2D rb;
+   
 
-    void Start()
+    private void Start()
     {
-        sr = GetComponent <SpriteRenderer>();
-       // hiddenPlayerLayer = LayerMask.NameToLayer("Hidden");
+        sr = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
+        hiddenPosition = transform.position;
+        rb.isKinematic = true;
     }
 
-    public void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (canInteract && Input.GetKeyDown(KeyCode.R))
         {
-            ToggleHide();
-
-        }
-      
-    }
-
-   public void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.name.Equals("Locker"))
-        {
-           // ToggleHide();
-            ToggleHiding();
+            TogglePlayerHide();
         }
     }
-    void ToggleHide()
-    {
-        PlayerHide = !PlayerHide;
 
-        if (PlayerHide)
+    private void TogglePlayerHide()
+    {
+        playerHidden = !playerHidden;
+
+        if (playerHidden)
         {
-            Physics2D.IgnoreLayerCollision(gameObject.layer, wallLayer, true);
-            gameObject.layer = hiddenPlayerLayer; // ตั้ง Layer เมื่อซ่อน
+            sr.sortingOrder = -1;
+            gameObject.layer = hiddenLayer;
+            rb.isKinematic = true;
         }
         else
         {
-            Physics2D.IgnoreLayerCollision(gameObject.layer, wallLayer, false);
-            gameObject.layer = PlayerLayer; // ตั้งคืนเป็น Layer ปกติของ Player
+            sr.sortingOrder = 2;
+            gameObject.layer = LayerMask.NameToLayer("Player");
+            rb.isKinematic = false;
+            transform.position = hiddenPosition;
         }
     }
-     void ToggleHiding()
-    {
-        PlayerHide = !PlayerHide;
 
-        if (PlayerHide){
-            Physics2D.IgnoreLayerCollision(6, 9, true);
-            sr.sortingOrder = 0;
-            
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Locker"))
+        {
+            canInteract = true;
         }
-        else{
-            Physics2D.IgnoreLayerCollision(6, 9, false);
-            sr.sortingOrder = 2;
-            
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Locker"))
+        {
+            canInteract = false;
         }
     }
 }
+
 
