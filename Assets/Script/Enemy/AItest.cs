@@ -47,8 +47,10 @@ public class AItest : MonoBehaviour
     
     void Update()
     {
-        Animante();
+
         transform.rotation = Quaternion.Euler(0, 0, 0);
+        Animante();
+        
         
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius, playerLayer);
         if (hitColliders.Length > 0)
