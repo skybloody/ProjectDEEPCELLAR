@@ -10,27 +10,28 @@ public class PlayerMovement : MonoBehaviour
     public float sprintSpeed = 5f;
     AudioSource audiosource;
     [SerializeField] GameObject flashlight;
+    [SerializeField] GameObject Fov;
 
     private SpriteRenderer sr;
     private bool playerHidden = false;
     private bool canInteract = false;
     public LayerMask hiddenLayer;
-    private Vector3 hiddenPosition;
-
-
-
     public Vector2 moveMent;
 
-   // public Animator animator;
     private bool isSprinting = false;
     private StaminaBar staminaBar;
+
+    public Animator animator;
+    private Vector2 LastMovelDirection;
+    private bool facingleft = true;
+    
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         audiosource = GetComponent<AudioSource>();
         staminaBar = StaminaBar.instance;
        
@@ -38,9 +39,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        ProccessAnima();
+        Animated();
 
-        moveMent.x = Input.GetAxisRaw("Horizontal");
-        moveMent.y = Input.GetAxisRaw("Vertical");
+        if (moveMent.x > 0 && !facingleft || moveMent.x < 0 && facingleft)
+        {
+            Flip();
+        }
 
         if (!playerHidden)  // เพิ่มเงื่อนไขนี้เพื่อตรวจสอบว่าผู้เล่นไม่ได้ซ่อนตัว
         {
@@ -57,6 +62,39 @@ public class PlayerMovement : MonoBehaviour
          animator.SetFloat("Vertical", moveMent.y);
          animator.SetFloat("Speed", moveMent.sqrMagnitude);*/
     }
+
+    void ProccessAnima()
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        if (moveX == 0 && moveY == 0 && (moveX != 0 || moveY != 0))
+        {
+            LastMovelDirection = moveMent;
+        }
+
+        moveMent.x = Input.GetAxisRaw("Horizontal");
+        moveMent.y = Input.GetAxisRaw("Vertical");
+        moveMent.Normalize();
+    }
+
+    void Animated()
+    {
+        animator.SetFloat("MoveX", moveMent.x);
+        animator.SetFloat("MoveY", moveMent.y);
+        animator.SetFloat("MoveMagnitude", moveMent.magnitude);
+        animator.SetFloat("LastMoveX", LastMovelDirection.x);
+        animator.SetFloat("LastMoveY", LastMovelDirection.y);
+    }
+
+    void Flip()
+    {
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+        facingleft = !facingleft;
+    }
+
     private void Run()
     {
         if (!playerHidden)  // เพิ่มเงื่อนไขนี้เพื่อตรวจสอบว่าผู้เล่นไม่ได้ซ่อนตัว
@@ -92,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
             gameObject.layer = hiddenLayer;
 
             flashlight.SetActive(false);
+            Fov.SetActive(false);
 
         }
         else
@@ -100,6 +139,7 @@ public class PlayerMovement : MonoBehaviour
             gameObject.layer = LayerMask.NameToLayer("Player");
 
             flashlight.SetActive(true);
+            Fov.SetActive(true);
         }
     }
 
