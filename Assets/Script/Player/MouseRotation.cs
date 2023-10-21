@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,4 +17,5 @@ public class MouseRotation : MonoBehaviour
         
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
+
 }

@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     
 
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,9 +36,10 @@ public class PlayerMovement : MonoBehaviour
         audiosource = GetComponent<AudioSource>();
         staminaBar = StaminaBar.instance;
        
-    }
 
-    void Update()
+}
+
+void Update()
     {
         ProccessAnima();
         Animated();

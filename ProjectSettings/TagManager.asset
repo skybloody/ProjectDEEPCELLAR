@@ -26,12 +26,12 @@ TagManager:
   - SoundEmitter
   - concrete
   - Waypoint
-  - Hidden
+  - 
   - Post
   - 
   - flashlight
-  - 
-  - 
+  - VisibleLayer
+  - InvisibleLayer
   - 
   - 
   - 

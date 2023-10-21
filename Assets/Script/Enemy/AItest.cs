@@ -28,6 +28,7 @@ public class AItest : MonoBehaviour
     private bool PlayerHide;
     //=====================================//
     
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -50,8 +51,10 @@ public class AItest : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, 0);
         Animante();
+
         
-        
+
+
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius, playerLayer);
         if (hitColliders.Length > 0)
         {
@@ -112,4 +115,5 @@ public class AItest : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
     //============================================================//
+    
 }
