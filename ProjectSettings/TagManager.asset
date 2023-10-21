@@ -9,6 +9,8 @@ TagManager:
   - Locker
   - SoundEmitter
   - Waypoint
+  - Ground
+  - Door
   layers:
   - Default
   - TransparentFX
