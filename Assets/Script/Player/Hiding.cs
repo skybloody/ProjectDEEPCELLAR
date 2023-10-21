@@ -1,70 +1,61 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Cinemachine.CinemachineOrbitalTransposer;
 
 public class Hiding : MonoBehaviour
 {
+    private SpriteRenderer sr;
+    private bool playerHidden = false;
+    private bool canInteract = false;
+
     
-    public SpriteRenderer sr;
-    public bool PlayerHide = false;
+   
 
-    public int hiddenPlayerLayer;
-    public LayerMask wallLayer;
-    private int PlayerLayer;
-
-    void Start()
+    private void Start()
     {
-        sr = GetComponent <SpriteRenderer>();
-       // hiddenPlayerLayer = LayerMask.NameToLayer("Hidden");
+        sr = GetComponent<SpriteRenderer>();
     }
 
-    public void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (canInteract && Input.GetKeyDown(KeyCode.E))
         {
-            ToggleHide();
-
-        }
-      
-    }
-
-   public void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.name.Equals("Locker"))
-        {
-           // ToggleHide();
-            ToggleHiding();
+            TogglePlayerHide();
         }
     }
-    void ToggleHide()
-    {
-        PlayerHide = !PlayerHide;
 
-        if (PlayerHide)
+    private void TogglePlayerHide()
+    {
+        playerHidden = !playerHidden;
+
+        if (playerHidden)
         {
-            Physics2D.IgnoreLayerCollision(gameObject.layer, wallLayer, true);
-            gameObject.layer = hiddenPlayerLayer; // ตั้ง Layer เมื่อซ่อน
+            sr.sortingOrder = -1;
+            
         }
         else
         {
-            Physics2D.IgnoreLayerCollision(gameObject.layer, wallLayer, false);
-            gameObject.layer = PlayerLayer; // ตั้งคืนเป็น Layer ปกติของ Player
+            sr.sortingOrder = 1;
+           
         }
     }
-     void ToggleHiding()
-    {
-        PlayerHide = !PlayerHide;
 
-        if (PlayerHide){
-            Physics2D.IgnoreLayerCollision(6, 9, true);
-            sr.sortingOrder = 0;
-            
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Locker"))
+        {
+            canInteract = true;
         }
-        else{
-            Physics2D.IgnoreLayerCollision(6, 9, false);
-            sr.sortingOrder = 2;
-            
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Locker"))
+        {
+            canInteract = false;
         }
     }
 }
+
 
