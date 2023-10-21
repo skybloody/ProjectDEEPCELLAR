@@ -11,6 +11,7 @@ TagManager:
   - Waypoint
   - Ground
   - Door
+  - flashlight
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Hidden
   - Post
   - 
-  - 
+  - flashlight
   - 
   - 
   - 

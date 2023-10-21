@@ -96,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            sr.sortingOrder = 2;
+            sr.sortingOrder = 3;
             gameObject.layer = LayerMask.NameToLayer("Player");
 
             flashlight.SetActive(true);
