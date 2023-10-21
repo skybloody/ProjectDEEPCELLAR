@@ -5,17 +5,18 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-
+    
     public float Speed = 1f;
     public float sprintSpeed = 5f;
     AudioSource audiosource;
-
+    [SerializeField] GameObject flashlight;
 
     private SpriteRenderer sr;
     private bool playerHidden = false;
     private bool canInteract = false;
     public LayerMask hiddenLayer;
     private Vector3 hiddenPosition;
+
 
 
     public Vector2 moveMent;
@@ -89,16 +90,19 @@ public class PlayerMovement : MonoBehaviour
         {
             sr.sortingOrder = -1;
             gameObject.layer = hiddenLayer;
-            
+
+            flashlight.SetActive(false);
+
         }
         else
         {
             sr.sortingOrder = 2;
             gameObject.layer = LayerMask.NameToLayer("Player");
-            
-            
+
+            flashlight.SetActive(true);
         }
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Locker"))

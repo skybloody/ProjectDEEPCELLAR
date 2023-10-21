@@ -11,6 +11,7 @@ TagManager:
   - Waypoint
   - Ground
   - Door
+  - Flashlight
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - SoundEmitter
   - concrete
   - Waypoint
-  - Hidden
+  - Flashlight
   - 
   - 
   - 

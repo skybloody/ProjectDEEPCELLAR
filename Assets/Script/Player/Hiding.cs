@@ -8,23 +8,18 @@ public class Hiding : MonoBehaviour
     private SpriteRenderer sr;
     private bool playerHidden = false;
     private bool canInteract = false;
-    public LayerMask hiddenLayer;
-    private Vector3 hiddenPosition;
 
-    private Rigidbody2D rb;
+    
    
 
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody2D>();
-        hiddenPosition = transform.position;
-        rb.isKinematic = true;
     }
 
     private void Update()
     {
-        if (canInteract && Input.GetKeyDown(KeyCode.R))
+        if (canInteract && Input.GetKeyDown(KeyCode.E))
         {
             TogglePlayerHide();
         }
@@ -37,15 +32,12 @@ public class Hiding : MonoBehaviour
         if (playerHidden)
         {
             sr.sortingOrder = -1;
-            gameObject.layer = hiddenLayer;
-            rb.isKinematic = true;
+            
         }
         else
         {
-            sr.sortingOrder = 2;
-            gameObject.layer = LayerMask.NameToLayer("Player");
-            rb.isKinematic = false;
-            transform.position = hiddenPosition;
+            sr.sortingOrder = 1;
+           
         }
     }
 
