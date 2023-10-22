@@ -24,16 +24,13 @@ public class AItest : MonoBehaviour
     private bool facingRight = true;
     //=====================================//
     private Animator anim;
-    private Rigidbody2D rb;
     private NavMeshAgent agent;
-    private AudioSource audioSource;
     private bool PlayerHide;
     //=====================================//
     
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = false;
