@@ -3,15 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Enemy
-  - Obstacle
-  - Locker
-  - SoundEmitter
-  - Waypoint
-  - Ground
-  - Door
-  - flashlight
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -19,19 +11,19 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
-  - Enemy
-  - Obstacle
-  - Locker
-  - SoundEmitter
-  - concrete
-  - Waypoint
   - 
-  - Post
   - 
-  - flashlight
-  - VisibleLayer
-  - InvisibleLayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
