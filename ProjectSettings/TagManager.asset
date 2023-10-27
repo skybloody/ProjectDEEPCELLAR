@@ -3,20 +3,28 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - flashlight
+  - SoundEmitter
+  - Obstacle
+  - Enemy
+  - Waypoint
+  - Door
+  - Goal
+  - Locker
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Obstacle
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - flashlight
+  - Concrete
+  - Wood
+  - Dirt
   - 
   - 
   - 

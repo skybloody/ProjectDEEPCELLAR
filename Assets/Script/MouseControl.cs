@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class MouseControl : MonoBehaviour
 {
-    private bool isMouseVisible = true;
+    public float rotationSpeed = 5.0f;
 
-    private void Start()
+    void Update()
     {
-        Cursor.visible = isMouseVisible;
-    }
+       
+        float mouseX = Input.GetAxis("Mouse X");
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) // สามารถเปลี่ยนเงื่อนไขตรงนี้ตามที่คุณต้องการ
-        {
-            isMouseVisible = !isMouseVisible;
-            Cursor.visible = isMouseVisible;
-        }
+       
+        transform.Rotate(Vector3.forward * mouseX * rotationSpeed);
     }
 }

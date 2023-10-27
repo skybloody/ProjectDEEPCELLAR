@@ -4,51 +4,22 @@ using UnityEngine;
 
 public class FootstepSystem : MonoBehaviour
 {
-    public Vector2 moveMent;
+    private AudioSource audioSource;
 
-    private AudioSource audiosource;
+    public AudioClip[] footstepSounds;
 
-    public AudioClip concrete;
-    public AudioClip wood;
-    public AudioClip dirt;
-
-    public void Start()
+    private void Start()
     {
-        audiosource = GetComponent<AudioSource>();
-    }
-    public void Update()
-    {
-        audioPlayer();
-        if (concrete)
-        { 
-          audiosource.clip = concrete;
-        }
-        else if(wood) 
-        {
-            audiosource.clip = wood;
-        }
-
-        if (!audiosource.isPlaying)
-        {
-            audiosource.Play();
-        }
+        audioSource = GetComponent<AudioSource>();
     }
 
-
-    void audioPlayer()
+    public void PlayFootstepSound()
     {
-        if (moveMent != Vector2.zero)
+        if (footstepSounds.Length > 0)
         {
-
-            if (!audiosource.isPlaying)
-            {
-                audiosource.Play();
-            }
+            int randomSoundIndex = Random.Range(0, footstepSounds.Length);
+            audioSource.clip = footstepSounds[randomSoundIndex];
+            audioSource.Play();
         }
-        else
-        {
-            audiosource.Stop();
-        }
-
     }
 }

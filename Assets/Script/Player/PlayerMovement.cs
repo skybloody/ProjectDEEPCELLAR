@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float sprintSpeed = 5f;
     AudioSource audiosource;
     [SerializeField] GameObject flashlight;
-    [SerializeField] GameObject Fov;
+    
 
     private SpriteRenderer sr;
     private bool playerHidden = false;
@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
             Flip();
         }
 
-        if (!playerHidden)  // เพิ่มเงื่อนไขนี้เพื่อตรวจสอบว่าผู้เล่นไม่ได้ซ่อนตัว
+        if (!playerHidden) 
         {
             Run();
         }
@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Run()
     {
-        if (!playerHidden)  // เพิ่มเงื่อนไขนี้เพื่อตรวจสอบว่าผู้เล่นไม่ได้ซ่อนตัว
+        if (!playerHidden)  
         {
             if (Input.GetKey(KeyCode.LeftShift) && staminaBar.currentStamina > 0)
             {
@@ -130,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
             gameObject.layer = hiddenLayer;
 
             flashlight.SetActive(false);
-            Fov.SetActive(false);
+            
 
         }
         else
@@ -139,7 +139,7 @@ public class PlayerMovement : MonoBehaviour
             gameObject.layer = LayerMask.NameToLayer("Player");
 
             flashlight.SetActive(true);
-            Fov.SetActive(true);
+            
         }
     }
 
