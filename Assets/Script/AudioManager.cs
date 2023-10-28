@@ -19,11 +19,13 @@ public class AudioManager : MonoBehaviour
     public AudioClip lose;
     public AudioClip eventdummy;
     public AudioClip locker;
+    public AudioClip Light;
 
     private void Start()
     {
         musicSource.clip = background;
         musicSource.Play();
+
     }
 
     public void PlaySFX(AudioClip clip)
