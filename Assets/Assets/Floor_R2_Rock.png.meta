@@ -113,10 +113,10 @@ TextureImporter:
       name: Floor_R2_Rock_2
       rect:
         serializedVersion: 2
-        x: 228
-        y: 1153
-        width: 94
-        height: 34
+        x: 597
+        y: 988
+        width: 200
+        height: 166
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
