@@ -38,7 +38,7 @@ public class AItest : MonoBehaviour
         agent.autoBraking = false;
         originalPosition = transform.position;
         lastKnownPosition = originalPosition;
-
+        audioSource = GetComponent<AudioSource>();
         waypoints = GameObject.FindGameObjectsWithTag("Waypoint")
             .Select(waypoint => waypoint.transform)
             .OrderBy(waypoint => waypoint.GetSiblingIndex())
@@ -53,7 +53,17 @@ public class AItest : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, 0);
         Animante();
-
+        if (player.position.x != 0 || transform.position.x != 0)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
+        }
 
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius, playerLayer);
         if (hitColliders.Length > 0)
