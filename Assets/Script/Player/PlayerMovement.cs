@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float sprintSpeed = 5f;
     AudioSource audiosource;
     [SerializeField] GameObject flashlight;
-    
+    [SerializeField] GameObject Fov;
 
     private SpriteRenderer sr;
     private bool playerHidden = false;
@@ -25,7 +25,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     private Vector2 LastMovelDirection;
     private bool facingleft = true;
-    
+    float x;
+    float y;
 
 
     void Start()
@@ -44,7 +45,20 @@ public class PlayerMovement : MonoBehaviour
     {
         ProccessAnima();
         Animated();
+        x = Input.GetAxisRaw("Horizontal");
+        y = Input.GetAxisRaw("Vertical");
 
+        if (x != 0 || y != 0)
+        {
+            if (!audiosource.isPlaying)
+            {
+                audiosource.Play();
+            }
+        }
+        else
+        {
+            audiosource.Stop();
+        }
         if (moveMent.x > 0 && !facingleft || moveMent.x < 0 && facingleft)
         {
             Flip();
@@ -55,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
             Run();
         }
 
-        if (canInteract && Input.GetKeyDown(KeyCode.E))
+        if (canInteract && Input.GetKeyDown(KeyCode.C))
         {
             audioManager.PlaySFX(audioManager.locker);
             TogglePlayerHide();
@@ -134,7 +148,7 @@ public class PlayerMovement : MonoBehaviour
             gameObject.layer = hiddenLayer;
 
             flashlight.SetActive(false);
-            
+            Fov.SetActive(false);
 
         }
         else
@@ -143,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
             gameObject.layer = LayerMask.NameToLayer("Player");
 
             flashlight.SetActive(true);
-            
+            Fov.SetActive(true);
         }
     }
 

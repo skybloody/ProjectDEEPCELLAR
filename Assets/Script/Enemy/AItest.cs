@@ -29,7 +29,7 @@ public class AItest : MonoBehaviour
     private AudioSource audioSource;
     private bool PlayerHide;
     //=====================================//
-    
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,23 +38,23 @@ public class AItest : MonoBehaviour
         agent.autoBraking = false;
         originalPosition = transform.position;
         lastKnownPosition = originalPosition;
-        
+
         waypoints = GameObject.FindGameObjectsWithTag("Waypoint")
             .Select(waypoint => waypoint.transform)
             .OrderBy(waypoint => waypoint.GetSiblingIndex())
             .ToArray();
-        
+
         currentWaypointIndex = 0; // กำหนด Waypoint แรกเป็น Waypoint 0
         SetDestinationToWaypoint();
     }
-    
+
     void Update()
     {
 
         transform.rotation = Quaternion.Euler(0, 0, 0);
         Animante();
-        
-        
+
+
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius, playerLayer);
         if (hitColliders.Length > 0)
         {
