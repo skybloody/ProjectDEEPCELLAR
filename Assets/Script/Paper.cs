@@ -10,7 +10,7 @@ public class Note_Paper : MonoBehaviour
 
     public GameObject MessagePanel;
     public bool Action = false;
-
+    AudioSource audioSource;
     void Start()
     {
         MessagePanel.SetActive(false);
@@ -25,6 +25,14 @@ public class Note_Paper : MonoBehaviour
                 MessagePanel.SetActive(false);
                 Action = false;
                 _noteImage.enabled = true;
+                audioSource.Play();
+            }
+            else if (Action == false)
+            {
+                MessagePanel.SetActive(true);
+                Action = true;
+                _noteImage.enabled = false;
+                audioSource.Stop();
             }
         }
     }
@@ -44,7 +52,7 @@ public class Note_Paper : MonoBehaviour
         {
             MessagePanel.SetActive(false);
             Action = false;
-            _noteImage.enabled = false;
+            //_noteImage.enabled = false;
         }
     }
 }
