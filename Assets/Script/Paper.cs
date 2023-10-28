@@ -10,29 +10,32 @@ public class Note_Paper : MonoBehaviour
 
     public GameObject MessagePanel;
     public bool Action = false;
-    AudioSource audioSource;
+    AudioManager audioManager;
     void Start()
     {
         MessagePanel.SetActive(false);
     }
+    void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.R))
         {
+            audioManager.PlaySFX(audioManager.readnote);
             if (Action == true)
             {
                 MessagePanel.SetActive(false);
                 Action = false;
                 _noteImage.enabled = true;
-                audioSource.Play();
             }
             else if (Action == false)
             {
                 MessagePanel.SetActive(true);
                 Action = true;
                 _noteImage.enabled = false;
-                audioSource.Stop();
             }
         }
     }

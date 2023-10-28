@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-    
+    AudioManager audioManager;
+
     public float Speed = 1f;
     public float sprintSpeed = 5f;
     AudioSource audiosource;
@@ -34,9 +35,11 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         audiosource = GetComponent<AudioSource>();
         staminaBar = StaminaBar.instance;
-       
     }
-
+    void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     void Update()
     {
         ProccessAnima();
@@ -54,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (canInteract && Input.GetKeyDown(KeyCode.E))
         {
+            audioManager.PlaySFX(audioManager.locker);
             TogglePlayerHide();
         }
 

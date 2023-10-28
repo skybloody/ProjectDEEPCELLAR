@@ -6,17 +6,22 @@ public class Anition_Door : MonoBehaviour
    
 {
     Animator animator;
+    AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
     }
-
+    void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
+            audioManager.PlaySFX(audioManager.dooropen);
             animator.SetBool("IsOpen", true);
         }
     }

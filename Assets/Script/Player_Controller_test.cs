@@ -6,6 +6,8 @@ public class Player_Controller_test : MonoBehaviour
 {
     Rigidbody2D _rb;
 
+
+
     public float _playerSpeed = 5f;
     bool _isGrounded = true;
     bool _isJumping = false;
