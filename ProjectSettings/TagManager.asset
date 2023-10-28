@@ -12,6 +12,8 @@ TagManager:
   - Door
   - Goal
   - Locker
+  - Ground
+  - Audio
   layers:
   - Default
   - TransparentFX
