@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
             Run();
         }
 
-        if (canInteract && Input.GetKeyDown(KeyCode.R))
+        if (canInteract && Input.GetKeyDown(KeyCode.E))
         {
             TogglePlayerHide();
         }
