@@ -1,27 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Cinemachine.CinemachineOrbitalTransposer;
 
 public class Hiding : MonoBehaviour
 {
-    private SpriteRenderer sr;
+    public GameObject flashlight;
+    public GameObject Fov;
+    public SpriteRenderer sr; 
+    
+
     private bool playerHidden = false;
     private bool canInteract = false;
+    public Rigidbody2D rb;
 
-    
-   
 
     private void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
-        if (canInteract && Input.GetKeyDown(KeyCode.E))
+        if (canInteract && Input.GetKeyDown(KeyCode.R))
         {
             TogglePlayerHide();
+        }
+
+        if (playerHidden)
+        {
+            rb.velocity = Vector2.zero; // ทำให้ความเร็วของ Rigidbody เป็นศูนย์เมื่อซ่อนตัว
         }
     }
 
@@ -32,13 +39,17 @@ public class Hiding : MonoBehaviour
         if (playerHidden)
         {
             sr.sortingOrder = -1;
-            
+            flashlight.SetActive(false);
+            Fov.SetActive(false);
         }
         else
         {
-            sr.sortingOrder = 1;
-           
+            sr.sortingOrder = 3;
+            gameObject.layer = LayerMask.NameToLayer("Player");
+            flashlight.SetActive(true);
+            Fov.SetActive(true);
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)

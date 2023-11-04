@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class FootstepSystem : MonoBehaviour
 {
-
-    public AudioClip[] footstepSounds;
     public AudioSource audioSource;
+
+    private AudioClip WoodFootstepClip;
+    private AudioClip DirtFootstepClip;
+    private AudioClip ConcreteFootstepClip;
 
 
     private void Start()
@@ -19,23 +21,18 @@ public class FootstepSystem : MonoBehaviour
         PlayFootstepSound();
     }
 
-
     public void PlayFootstepSound()
     {
-        if (footstepSounds.Length > 0)
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            if (!audioSource.isPlaying)
             {
-                int randomSoundIndex = Random.Range(0, footstepSounds.Length);
-                audioSource.clip = footstepSounds[randomSoundIndex];
                 audioSource.Play();
-                if (!audioSource.isPlaying)
-                {
-                    audioSource.Play();
-                }
             }
-            else
-            {
-                audioSource.Stop();
-            }
+        }
+        else
+        {
+            audioSource.Stop();
+        }
     }
 }

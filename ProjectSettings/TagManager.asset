@@ -12,8 +12,11 @@ TagManager:
   - Door
   - Goal
   - Locker
-  - Ground
   - Audio
+  - Dirt
+  - Wood
+  - Concrete
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -24,11 +27,11 @@ TagManager:
   - Enemy
   - Player
   - flashlight
-  - Concrete
-  - Wood
-  - Dirt
-  - Hidden
+  - hidden
   - Locker
+  - 
+  - 
+  - 
   - Prop
   - Waypoint
   - 

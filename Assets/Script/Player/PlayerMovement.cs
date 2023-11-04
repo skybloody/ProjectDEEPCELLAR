@@ -5,175 +5,89 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-    AudioManager audioManager;
 
+    private StaminaBar staminaBar;
     public float Speed = 1f;
     public float sprintSpeed = 5f;
-    AudioSource audiosource;
-    [SerializeField] GameObject flashlight;
-    [SerializeField] GameObject Fov;
-
-    private SpriteRenderer sr;
-    private bool playerHidden = false;
-    private bool canInteract = false;
-    public LayerMask hiddenLayer;
-    public Vector2 moveMent;
-
     private bool isSprinting = false;
-    private StaminaBar staminaBar;
 
+    private bool playerHidden = false;
     public Animator animator;
+    
+    private Vector2 moveMent;
     private Vector2 LastMovelDirection;
-    private bool facingleft = true;
     float x;
     float y;
 
-
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
-        animator = GetComponent<Animator>();
-        audiosource = GetComponent<AudioSource>();
+        rb = GetComponent <Rigidbody2D>();
         staminaBar = StaminaBar.instance;
     }
-    void Awake()
-    {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-    }
+
     void Update()
     {
-        ProccessAnima();
-        Animated();
+        ProccessMovementInput();
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
 
         if (x != 0 || y != 0)
         {
-            if (!audiosource.isPlaying)
-            {
-                audiosource.Play();
-            }
+
         }
         else
         {
-            audiosource.Stop();
-        }
-        if (moveMent.x > 0 && !facingleft || moveMent.x < 0 && facingleft)
-        {
-            Flip();
-        }
 
-        if (!playerHidden) 
+        }
+        if (!playerHidden)
         {
             Run();
+            AniRun();
         }
-
-        if (canInteract && Input.GetKeyDown(KeyCode.C))
-        {
-            audioManager.PlaySFX(audioManager.locker);
-            TogglePlayerHide();
-        }
-
-
-        /* animator.SetFloat("Horizontal", moveMent.x);
-         animator.SetFloat("Vertical", moveMent.y);
-         animator.SetFloat("Speed", moveMent.sqrMagnitude);*/
     }
 
-    void ProccessAnima()
+    void ProccessMovementInput()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        if (moveX == 0 && moveY == 0 && (moveX != 0 || moveY != 0))
+        if (moveX == 0 && moveY == 0 && (moveMent.x != 0 || moveMent.y != 0))
         {
             LastMovelDirection = moveMent;
         }
 
         moveMent.x = Input.GetAxisRaw("Horizontal");
         moveMent.y = Input.GetAxisRaw("Vertical");
+
         moveMent.Normalize();
     }
 
-    void Animated()
+    void AniRun()
     {
-        animator.SetFloat("MoveX", moveMent.x);
-        animator.SetFloat("MoveY", moveMent.y);
-        animator.SetFloat("MoveMagnitude", moveMent.magnitude);
-        animator.SetFloat("LastMoveX", LastMovelDirection.x);
-        animator.SetFloat("LastMoveY", LastMovelDirection.y);
-    }
-
-    void Flip()
-    {
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
-        facingleft = !facingleft;
-    }
-
-    private void Run()
-    {
-        if (!playerHidden)  
+        if (!playerHidden)
         {
-            if (Input.GetKey(KeyCode.LeftShift) && staminaBar.currentStamina > 0)
-            {
-                isSprinting = true;
-                staminaBar.UseStamina(1);
-            }
-
             if (isSprinting && staminaBar.currentStamina > 0)
             {
+                animator.SetBool("IsSprinting", true);
                 rb.velocity = moveMent.normalized * sprintSpeed;
             }
             else
             {
+                animator.SetBool("IsSprinting", false);
                 rb.velocity = moveMent.normalized * Speed;
             }
-
-            if (Input.GetKeyUp(KeyCode.LeftShift))
-            {
-                isSprinting = false;
-            }
         }
     }
-    private void TogglePlayerHide()
+    void Run()
     {
-        playerHidden = !playerHidden;
-
-        if (playerHidden)
+        if (Input.GetKey(KeyCode.LeftShift) && staminaBar.currentStamina > 0)
         {
-            sr.sortingOrder = -1;
-            gameObject.layer = hiddenLayer;
-
-            flashlight.SetActive(false);
-            Fov.SetActive(false);
-
+            isSprinting = true;
+            staminaBar.UseStamina(1);
         }
-        else
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            sr.sortingOrder = 3;
-            gameObject.layer = LayerMask.NameToLayer("Player");
-
-            flashlight.SetActive(true);
-            Fov.SetActive(true);
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Locker"))
-        {
-            canInteract = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Locker"))
-        {
-            canInteract = false;
+            isSprinting = false;
         }
     }
 }

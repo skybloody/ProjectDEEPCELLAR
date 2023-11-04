@@ -5,39 +5,36 @@ using UnityEngine.AI;
 
 public class AIFollowSound : MonoBehaviour
 {
-    public Transform player;
-    public NavMeshAgent agent;
-    public float suspicionDistance = 5.0f;
-    public float currentSuspicion = 0.0f;
-    private AudioSource playerAudioSource;
-    
+    public Transform target; // ตำแหน่งเป้าหมาย (ผู้เล่น)
+    private NavMeshAgent navMeshAgent; // อ้างอิง NavMeshAgent สำหรับเคลื่อนที่
 
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        player = GameObject.Find("Player").transform;
-        playerAudioSource = player.GetComponent<AudioSource>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        if (target == null)
+        {
+            // ถ้าไม่มีเป้าหมายที่กำหนดให้ใช้ GameObject ที่มี Tag "Player" เป็นเป้าหมาย
+            target = GameObject.FindGameObjectWithTag("Player").transform;
+        }
     }
-
 
     void Update()
     {
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+        // ตรวจสอบว่ามีเป้าหมายหรือไม่
+        if (target == null)
+        {
+            Debug.LogWarning("ไม่พบเป้าหมาย!");
+            return;
+        }
 
-        if (distanceToPlayer <= suspicionDistance)
+        // ตั้งค่าตำแหน่งเป้าหมาย
+        navMeshAgent.SetDestination(target.position);
+
+        // เปลี่ยนเป้าหมายหากผู้เล่นยิ่งไปห่างเกินระยะที่กำหนด (เช่น ระยะ 10 เมตร)
+        if (Vector3.Distance(transform.position, target.position) > 10f)
         {
-            
-            agent.SetDestination(player.position);
+            target = null; // เป้าหมายห่างเกินไป กำหนดให้ไม่มีเป้าหมาย
         }
-        else
-        {
-           
-            agent.ResetPath();
-        }
-    }
-    public void IncreaseSuspicion(float amount)
-    {
-        // เพิ่มค่าสงสัย
-        currentSuspicion += amount;
     }
 }

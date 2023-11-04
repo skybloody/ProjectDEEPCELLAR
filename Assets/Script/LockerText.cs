@@ -1,49 +1,65 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static UnityEngine.Rendering.BoolParameter;
+
 
 public class LockerText : MonoBehaviour
 {
     public Vector3 offset;
     public Transform player;
-    public Transform Locker;
     public TextMeshProUGUI messageText;
+    public Transform[] lockers;
 
-    public float interactionDistance = 2f;
-    public float displayTime = 3f;
+    private bool[] displayMessages;
+    public float interactionDistance = 2.0f;
+    public float displayTime = 2.0f;
+    private Coroutine[] messageCoroutines;
 
-    private bool displayMessage = false;
-
-
-    void Start()
+    private void Awake()
     {
-
+        displayMessages = new bool[lockers.Length];
+        messageCoroutines = new Coroutine[lockers.Length];
     }
-
 
     void Update()
     {
-        float distance = Vector3.Distance(player.position, Locker.position);
-
-        if (distance <= interactionDistance)
+        for (int i = 0; i < lockers.Length; i++)
         {
-            if (!displayMessage)
+            float distance = Vector3.Distance(player.position, lockers[i].position);
+
+            if (distance <= interactionDistance)
             {
-                StartCoroutine(DisplayMessageForTime("[press \" R \" Hide]", displayTime));
-                displayMessage = true;
+                if (!displayMessages[i])
+                {
+                    if (messageCoroutines[i] != null)
+                    {
+                        StopCoroutine(messageCoroutines[i]);
+                    }
+
+                    messageCoroutines[i] = StartCoroutine(DisplayMessageForTime("[press \" R \" Hide]", displayTime, i));
+                    displayMessages[i] = true;
+                }
+            }
+            else
+            {
+                if (displayMessages[i])
+                {
+                    StopCoroutine(messageCoroutines[i]);
+                    messageText.SetText("");
+                    displayMessages[i] = false;
+                }
             }
         }
-        else
-        {
-            messageText.text = "";
-            displayMessage = false;
-        }
     }
-    IEnumerator DisplayMessageForTime(string text, float time)
+
+    IEnumerator DisplayMessageForTime(string text, float time, int index)
     {
-        messageText.text = text;
+        messageText.SetText(text);
         yield return new WaitForSeconds(time);
-        messageText.text = "";
+        messageText.SetText("");
+        displayMessages[index] = false;
     }
 }
