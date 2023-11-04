@@ -30,7 +30,7 @@ public class ResolutionSystem : MonoBehaviour
         }
 
         List<string> options = new List<string>();
-        for(int i = 0;i < resolutions.Length;i++) 
+        for(int i = 0;i < filteredResolutions.Count;i++) 
         {
             string resolutionOption = filteredResolutions[i].width + "x" + filteredResolutions[i].height + " " + filteredResolutions[i].refreshRate + " Hz";
             options.Add(resolutionOption);
