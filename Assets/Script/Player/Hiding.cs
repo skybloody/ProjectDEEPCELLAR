@@ -6,6 +6,7 @@ public class Hiding : MonoBehaviour
 {
     public GameObject flashlight;
     public GameObject Fov;
+    public GameObject Sound;
     public SpriteRenderer sr; 
     
 
@@ -21,7 +22,7 @@ public class Hiding : MonoBehaviour
 
     private void Update()
     {
-        if (canInteract && Input.GetKeyDown(KeyCode.R))
+        if (canInteract && Input.GetKeyDown(KeyCode.T))
         {
             TogglePlayerHide();
         }
