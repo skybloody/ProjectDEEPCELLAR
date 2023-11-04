@@ -1,48 +1,37 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FadeWalls : MonoBehaviour
 {
-    public float maxAlpha = 1.0f; // Maximum alpha value (fully opaque)
-    public float minAlpha = 0.2f; // Minimum alpha value (semi-transparent)
+    public Transform player;  // ใส่วัตถุของผู้เล่นที่คุณต้องการตรวจสอบระยะห่าง
 
-    private Material wallFade;
-    private bool playerInside;
+    public float cullingDistance = 10.0f;  // ระยะห่างที่เมื่อผู้เล่นเข้าใกล้มากกว่าจะทำการลดลง
 
-    private void Start()
+    private SpriteRenderer spriteRenderer;  // ใช้สำหรับ SpriteRenderer ของวัตถุ
+
+    void Start()
     {
-        // Get the material of the roof object
-        wallFade = GetComponent<Renderer>().material;
-        // Initialize alpha to the maximum value
-        SetAlpha(maxAlpha);
+        spriteRenderer = GetComponent<SpriteRenderer>();  // ดึงคอมโพเนนต์ SpriteRenderer ที่เชื่อมกับวัตถุนี้
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void Update()
     {
-        if (other.CompareTag("Player"))
+        if (player != null)
         {
-            // Player entered the trigger zone, lower the texture alpha
-            SetAlpha(minAlpha);
-            playerInside = true;
-        }
-    }
+            float distanceToPlayer = Vector3.Distance(player.position, transform.position);
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            // Player exited the trigger zone, raise the texture alpha
-            SetAlpha(maxAlpha);
-            playerInside = false;
+            if (distanceToPlayer < cullingDistance)
+            {
+                // ถ้าผู้เล่นเข้าใกล้มากกว่าระยะห่างที่กำหนด จะทำการลดลง
+                spriteRenderer.enabled = false;
+            }
+            else
+            {
+                // ถ้าผู้เล่นห่างออกไปมากกว่าระยะห่างที่กำหนด จะทำการแสดงวัตถุ
+                spriteRenderer.enabled = true;
+            }
         }
-    }
-
-    private void SetAlpha(float alphaValue)
-    {
-        Color color = wallFade.color;
-        color.a = alphaValue;
-        wallFade.color = color;
     }
 }
 
