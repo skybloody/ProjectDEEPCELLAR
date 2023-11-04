@@ -6,7 +6,7 @@ public class FadeWalls : MonoBehaviour
 {
     public Transform player;  // ใส่วัตถุของผู้เล่นที่คุณต้องการตรวจสอบระยะห่าง
 
-    public float cullingDistance = 10.0f;  // ระยะห่างที่เมื่อผู้เล่นเข้าใกล้มากกว่าจะทำการลดลง
+    public float cullingDistance = 0f;  // ระยะห่างที่เมื่อผู้เล่นเข้าใกล้มากกว่าจะทำการลดลง
 
     private SpriteRenderer spriteRenderer;  // ใช้สำหรับ SpriteRenderer ของวัตถุ
 
