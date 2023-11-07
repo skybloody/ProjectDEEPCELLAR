@@ -605,6 +605,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Wall_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 1394
+        height: 346
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207388514ecc44240a7cc194fd38d85e
+      internalID: 1246987089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -632,6 +653,7 @@ TextureImporter:
       Wall_20: 1915044727
       Wall_21: -820213630
       Wall_22: -1905877426
+      Wall_23: 1246987089
       Wall_3: -269157466
       Wall_4: -502343573
       Wall_5: 1871856084
