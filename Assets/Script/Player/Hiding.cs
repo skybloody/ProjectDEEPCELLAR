@@ -40,6 +40,7 @@ public class Hiding : MonoBehaviour
         if (playerHidden)
         {
             sr.sortingOrder = -1;
+            gameObject.layer = LayerMask.NameToLayer("Default");
             flashlight.SetActive(false);
             Fov.SetActive(false);
         }
