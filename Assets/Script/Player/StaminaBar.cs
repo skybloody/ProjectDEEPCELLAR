@@ -31,16 +31,7 @@ public class StaminaBar : MonoBehaviour
     }
     private void Update()
     {
-        if (player != null)
-        {
-            Vector3 playerScreenPos = Camera.main.WorldToScreenPoint(player.position + offset);
-            staminaBar.transform.position = playerScreenPos;
             staminaBar.gameObject.SetActive(true);
-        }
-        else
-        {
-            staminaBar.gameObject.SetActive(false);
-        }
     }
 
 
