@@ -15,21 +15,21 @@ public class Hiding : MonoBehaviour
     public Rigidbody2D rb;
 
 
-    private void Start()
+    public void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+       rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    public void Update()
     {
-        if (canInteract && Input.GetKeyDown(KeyCode.T))
+        if (canInteract && Input.GetMouseButtonDown(1))
         {
             TogglePlayerHide();
         }
 
         if (playerHidden)
         {
-            rb.velocity = Vector2.zero; // ทำให้ความเร็วของ Rigidbody เป็นศูนย์เมื่อซ่อนตัว
+           rb.velocity = Vector2.zero; 
         }
     }
 
@@ -39,17 +39,19 @@ public class Hiding : MonoBehaviour
 
         if (playerHidden)
         {
-            sr.sortingOrder = -1;
-            gameObject.layer = LayerMask.NameToLayer("Default");
+            sr.sortingOrder = 0;
+            gameObject.layer = LayerMask.NameToLayer("hidden");
             flashlight.SetActive(false);
             Fov.SetActive(false);
         }
+
         else
         {
             sr.sortingOrder = 3;
             gameObject.layer = LayerMask.NameToLayer("Player");
             flashlight.SetActive(true);
             Fov.SetActive(true);
+
         }
 
     }

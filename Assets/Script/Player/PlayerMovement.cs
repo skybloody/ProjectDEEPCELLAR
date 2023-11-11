@@ -6,12 +6,18 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
 
+    public GameObject flashlight;
+    public GameObject Fov;
+    public GameObject Sound;
+
     private StaminaBar staminaBar;
     public float Speed = 1f;
     public float sprintSpeed = 5f;
     private bool isSprinting = false;
 
     private bool playerHidden = false;
+    private bool canInteract = false;
+    public SpriteRenderer sr;
     public Animator animator;
     
     private Vector2 moveMent;
@@ -31,14 +37,16 @@ public class PlayerMovement : MonoBehaviour
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
 
-        if (x != 0 || y != 0)
+        if (canInteract && Input.GetMouseButtonDown(1))
         {
-
+            TogglePlayerHide();
         }
-        else
+
+        if (playerHidden)
         {
-
+            rb.velocity = Vector2.zero;
         }
+        
         if (!playerHidden)
         {
             Run();
@@ -88,6 +96,44 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             isSprinting = false;
+        }
+    }
+
+    private void TogglePlayerHide()
+    {
+        playerHidden = !playerHidden;
+
+        if (playerHidden)
+        {
+            sr.sortingOrder = 0;
+            gameObject.layer = LayerMask.NameToLayer("hidden");
+            flashlight.SetActive(false);
+            Fov.SetActive(false);
+        }
+
+        else
+        {
+            sr.sortingOrder = 3;
+            gameObject.layer = LayerMask.NameToLayer("Player");
+            flashlight.SetActive(true);
+            Fov.SetActive(true);
+
+        }
+
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Locker"))
+        {
+            canInteract = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Locker"))
+        {
+            canInteract = false;
         }
     }
 }

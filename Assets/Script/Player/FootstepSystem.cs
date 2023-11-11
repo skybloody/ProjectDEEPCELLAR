@@ -4,35 +4,63 @@ using UnityEngine;
 
 public class FootstepSystem : MonoBehaviour
 {
-    public AudioSource audioSource;
+    public AudioClip footstepSound;
+    private AudioSource footstepAudio;
+    public float maxFootstepDistance = 10f;
 
-    private AudioClip WoodFootstepClip;
-    private AudioClip DirtFootstepClip;
-    private AudioClip ConcreteFootstepClip;
-
-
-    private void Start()
+    void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        footstepAudio = GetComponent<AudioSource>();
+        footstepAudio.maxDistance = maxFootstepDistance;
     }
 
-    private void Update()
+    void Update()
     {
-        PlayFootstepSound();
-    }
+        // โค้ดอื่น ๆ เกี่ยวกับการเคลื่อนที่ของผู้เล่น
 
-    public void PlayFootstepSound()
-    {
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-            }
+            PlayFootstepSound();
+
+            // แจ้งให้ศัตรูทราบ
+            NotifyEnemies();
         }
-        else
+
+        if (!(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)))
         {
-            audioSource.Stop();
+            StopFootstepSound();
+        }
+    }
+
+    void PlayFootstepSound()
+    {
+        if (!footstepAudio.isPlaying)
+        {
+            footstepAudio.PlayOneShot(footstepSound);
+        }
+    }
+
+    void StopFootstepSound()
+    {
+        footstepAudio.Stop();
+    }
+
+    void NotifyEnemies()
+    {
+        // หาคอลไลเดอร์ทั้งหมดภายในระยะทาง maxFootstepDistance
+        Collider[] colliders = Physics.OverlapSphere(transform.position, maxFootstepDistance);
+
+        foreach (Collider collider in colliders)
+        {
+            // ตรวจสอบว่าคอลไลเดอร์เป็นของศัตรูหรือไม่
+            AItest enemy = collider.GetComponent<AItest>();
+
+            if (enemy != null)
+            {
+                // แจ้งให้ศัตรูทราบเรื่องเสียง
+
+               // enemy.OnFootstepHeard(transform.position);
+            }
         }
     }
 }

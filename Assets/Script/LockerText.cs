@@ -60,6 +60,6 @@ public class LockerText : MonoBehaviour
         messageText.SetText(text);
         yield return new WaitForSeconds(time);
         messageText.SetText("");
-        displayMessages[index] = false;
+        displayMessages[index] = true;
     }
 }
