@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 4793542066226566825}
   - component: {fileID: 1214494766426823777}
   - component: {fileID: 1952641166953954486}
-  - component: {fileID: 9024873418142627799}
-  - component: {fileID: 4275232155270495110}
   m_Layer: 0
   m_Name: Tree_01 (2)
   m_TagString: Untagged
@@ -149,51 +147,3 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!114 &9024873418142627799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579633385766663504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 1, y: -1}
-  m_UseGraphicAlpha: 1
---- !u!114 &4275232155270495110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579633385766663504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_ComponentVersion: 1
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 00000000274cb276479e033909c3a0cc05fa8e02192ce3621b81c21aeb3e86d9
-  m_ShapePath:
-  - {x: -1.6929235, y: -0.98489285, z: 0}
-  - {x: -1.8397822, y: -0.43567842, z: 0}
-  - {x: -1.7469407, y: 1.1829534, z: 0}
-  - {x: 1.692926, y: 1.1649514, z: 0}
-  - {x: 1.7792814, y: 0.5726199, z: 0}
-  - {x: 1.6172357, y: -0.48969272, z: 0}
-  - {x: 1.6389089, y: -1.110929, z: 0}
-  m_ShapePathHash: 1474680511
-  m_Mesh: {fileID: 0}
-  m_InstanceId: -2515452
-  m_LocalBounds:
-    m_Center: {x: -0.03025043, y: 0.036012173, z: 0}
-    m_Extent: {x: 1.8095318, y: 1.1469412, z: 0}

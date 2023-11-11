@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 6703976352719604358}
   - component: {fileID: 518958184549015874}
   - component: {fileID: 3437558583528499747}
-  - component: {fileID: 5491181165789099721}
-  - component: {fileID: 2721740138084066937}
   m_Layer: 15
   m_Name: bench
   m_TagString: Untagged
@@ -132,48 +130,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.812603, y: 0.9454334}
   m_EdgeRadius: 0
---- !u!114 &5491181165789099721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 425470022266187916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 1, y: -1}
-  m_UseGraphicAlpha: 1
---- !u!114 &2721740138084066937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 425470022266187916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_ComponentVersion: 1
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 00000000274cb276479e033909c3a0cc05fa8e02192ce3621b81c21aeb3e86d9
-  m_ShapePath:
-  - {x: -8.768717, y: -0.54218906, z: 0.000000020332948}
-  - {x: -8.683326, y: 2.162834, z: 0.000000020332948}
-  - {x: -0.07869981, y: 2.2257714, z: 0.000000020332948}
-  - {x: -0.005942541, y: -0.4980303, z: 0.000000020332948}
-  m_ShapePathHash: -960831932
-  m_Mesh: {fileID: 0}
-  m_InstanceId: -2589202
-  m_LocalBounds:
-    m_Center: {x: -4.3873296, y: 0.8417912, z: 0}
-    m_Extent: {x: 4.381387, y: 1.3839803, z: 0}

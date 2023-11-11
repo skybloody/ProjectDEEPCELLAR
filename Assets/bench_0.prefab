@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3806676538845561219}
   - component: {fileID: 8645399297083443421}
-  - component: {fileID: 8643942926659493506}
-  - component: {fileID: 5287659720397058683}
   m_Layer: 0
   m_Name: bench_0
   m_TagString: Untagged
@@ -86,48 +84,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8643942926659493506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4377067796934049197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 1, y: -1}
-  m_UseGraphicAlpha: 1
---- !u!114 &5287659720397058683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4377067796934049197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_ComponentVersion: 1
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 00000000274cb276479e033909c3a0cc05fa8e02192ce3621b81c21aeb3e86d9
-  m_ShapePath:
-  - {x: -1.2457927, y: -0.8300001, z: 0}
-  - {x: -1.2600006, y: 0.7731631, z: 0}
-  - {x: 1.2600012, y: 0.7589536, z: 0}
-  - {x: 1.2600002, y: -0.8299999, z: 0}
-  m_ShapePathHash: 1788931251
-  m_Mesh: {fileID: 0}
-  m_InstanceId: -2593900
-  m_LocalBounds:
-    m_Center: {x: 0.00000035762787, y: -0.028418481, z: 0}
-    m_Extent: {x: 1.260001, y: 0.8015816, z: 0}

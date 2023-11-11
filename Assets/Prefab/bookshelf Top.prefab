@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7118648270501903593}
   - component: {fileID: 7726909423214847944}
-  - component: {fileID: 2858496135954496438}
-  - component: {fileID: 1976052883892382657}
   m_Layer: 0
   m_Name: bookshelf Top
   m_TagString: Untagged
@@ -86,48 +84,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2858496135954496438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6947358197264663908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 1, y: -1}
-  m_UseGraphicAlpha: 1
---- !u!114 &1976052883892382657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6947358197264663908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_ComponentVersion: 1
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 00000000274cb276479e033909c3a0cc05fa8e02192ce3621b81c21aeb3e86d9
-  m_ShapePath:
-  - {x: -2.2251618, y: -2.9706426, z: 0}
-  - {x: -2.0950184, y: 3.5779822, z: 0}
-  - {x: 1.7913449, y: 3.7515097, z: 0}
-  - {x: 1.9648747, y: -3.100786, z: 0}
-  m_ShapePathHash: -1076752500
-  m_Mesh: {fileID: 0}
-  m_InstanceId: -2585000
-  m_LocalBounds:
-    m_Center: {x: -0.1301434, y: 0.32536197, z: 0}
-    m_Extent: {x: 2.0950184, y: 3.426148, z: 0}
