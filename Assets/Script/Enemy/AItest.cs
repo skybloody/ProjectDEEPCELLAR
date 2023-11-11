@@ -98,7 +98,7 @@ public class AItest : MonoBehaviour
     //============================================================//   
     void SetDestinationToWaypoint()
     {
-        agent.SetDestination(waypoints[currentWaypointIndex].position); // ตั้งค่า NavMeshAgent ไปยัง Waypoint ปัจจุบัน
+        //agent.SetDestination(waypoints[currentWaypointIndex].position); // ตั้งค่า NavMeshAgent ไปยัง Waypoint ปัจจุบัน
     }
     //============================================================//
     void Animante()
