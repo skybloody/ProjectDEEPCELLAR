@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5110477621258905478}
   - component: {fileID: 1467583673120908996}
+  - component: {fileID: 1078118393286721481}
+  - component: {fileID: 719644352342676927}
   m_Layer: 0
   m_Name: tree
   m_TagString: Untagged
@@ -84,3 +86,58 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1078118393286721481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6288585707585460260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000274cb276479e033909c3a0cc05fa8e02192ce3621b81c21aeb3e86d9
+  m_ShapePath:
+  - {x: -0.32382682, y: -1.4746708, z: 0}
+  - {x: -0.38483208, y: -0.5904093, z: 0}
+  - {x: -0.7209726, y: -0.31651717, z: 0}
+  - {x: -0.7085259, y: 0.24372116, z: 0}
+  - {x: -0.6338258, y: 0.704361, z: 0}
+  - {x: -0.3343617, y: 1.1437008, z: 0}
+  - {x: 0.10933169, y: 1.3197478, z: 0}
+  - {x: 0.4990976, y: 1.0778515, z: 0}
+  - {x: 0.7272593, y: 0.6525905, z: 0}
+  - {x: 0.86014146, y: 0.19392192, z: 0}
+  - {x: 0.8227914, y: -0.42856485, z: 0}
+  - {x: 0.6982945, y: -0.6028609, z: 0}
+  - {x: 0.51154923, y: -0.6526602, z: 0}
+  - {x: 0.46533346, y: -1.5038486, z: 0}
+  m_ShapePathHash: -1979282901
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -2507574
+  m_LocalBounds:
+    m_Center: {x: 0.06958443, y: -0.092050314, z: 0}
+    m_Extent: {x: 0.790557, y: 1.4117982, z: 0}
+--- !u!114 &719644352342676927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6288585707585460260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
