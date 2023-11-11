@@ -30,7 +30,7 @@ TagManager:
   - flashlight
   - hidden
   - Locker
-  - 
+  - Door
   - 
   - 
   - Prop
@@ -54,4 +54,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 1991396391
+    locked: 0
+  - name: Wall
+    uniqueID: 956538439
+    locked: 0
+  - name: FrameTop
+    uniqueID: 3433087753
+    locked: 0
+  - name: Door
+    uniqueID: 42924549
+    locked: 0
+  - name: Shair
+    uniqueID: 1659055129
+    locked: 0
+  - name: Player
+    uniqueID: 448954651
+    locked: 0
+  - name: Top
+    uniqueID: 3649453803
     locked: 0
