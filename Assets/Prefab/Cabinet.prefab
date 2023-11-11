@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7247219988137077599}
   - component: {fileID: 9151926799383152664}
   - component: {fileID: 2382560305628464407}
-  - component: {fileID: 5682003959322708482}
   - component: {fileID: 2844221414827903353}
   - component: {fileID: 3921823469764857863}
   - component: {fileID: 4012995914790086057}
@@ -105,22 +104,6 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!114 &5682003959322708482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489290059211654594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 0
-  m_Area: 0
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!114 &2844221414827903353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +145,7 @@ MonoBehaviour:
   - {x: 1.39411, y: -1.99407, z: 0}
   m_ShapePathHash: 2001643582
   m_Mesh: {fileID: 0}
-  m_InstanceId: -2530064
+  m_InstanceId: 127146
   m_LocalBounds:
     m_Center: {x: -0.05820167, y: 0.33757973, z: 0}
     m_Extent: {x: 1.4523118, y: 2.3316498, z: 0}
