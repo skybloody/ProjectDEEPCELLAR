@@ -67,7 +67,7 @@ TagManager:
   - name: Door
     uniqueID: 42924549
     locked: 0
-  - name: Shair
+  - name: Object
     uniqueID: 1659055129
     locked: 0
   - name: Player
