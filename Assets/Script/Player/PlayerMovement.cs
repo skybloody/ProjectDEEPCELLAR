@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent <Rigidbody2D>();
         staminaBar = StaminaBar.instance;
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -37,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
 
-        if (canInteract && Input.GetMouseButtonDown(1))
+        if (canInteract && Input.GetKeyDown(KeyCode.G))
         {
             TogglePlayerHide();
         }
@@ -106,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
         if (playerHidden)
         {
             sr.sortingOrder = 0;
-            gameObject.layer = LayerMask.NameToLayer("hidden");
+            sr.sortingLayerName = "Hidden";
             flashlight.SetActive(false);
             Fov.SetActive(false);
         }
@@ -114,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             sr.sortingOrder = 3;
-            gameObject.layer = LayerMask.NameToLayer("Player");
+            sr.sortingLayerName = "Player";
             flashlight.SetActive(true);
             Fov.SetActive(true);
 
