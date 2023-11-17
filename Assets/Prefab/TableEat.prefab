@@ -262,6 +262,8 @@ GameObject:
   m_Component:
   - component: {fileID: 127245841226221976}
   - component: {fileID: 2770741576345043470}
+  - component: {fileID: 977148365795543415}
+  - component: {fileID: 4925796207325397876}
   m_Layer: 0
   m_Name: TableEat
   m_TagString: Untagged
@@ -351,6 +353,51 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &977148365795543415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7816836866291419200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &4925796207325397876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7816836866291419200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 0
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000274cb276479e033909c3a0cc05fa8e02192ce3621b81c21aeb3e86d9
+  m_ShapePath:
+  - {x: -1.4025536, y: -0.75793266, z: 0}
+  - {x: -1.4180489, y: 0.9783516, z: 0}
+  - {x: 1.3807564, y: 0.9628563, z: 0}
+  - {x: 1.3652611, y: -0.80441666, z: 0}
+  m_ShapePathHash: -1423307179
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -11844
+  m_LocalBounds:
+    m_Center: {x: -0.01864624, y: 0.08696747, z: 0}
+    m_Extent: {x: 1.3994026, y: 0.8913841, z: 0}
 --- !u!1 &8457664703623539851
 GameObject:
   m_ObjectHideFlags: 0
