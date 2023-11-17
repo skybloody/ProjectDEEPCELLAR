@@ -45,7 +45,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("LevelDesign");
     }
 
     public void GoToMainMenu()

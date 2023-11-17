@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -22,13 +23,16 @@ public class AItest : MonoBehaviour
     private Vector2 lastMoveDirection;
     private int currentWaypointIndex;
     private bool facingRight = true;
-    //=====================================//
-    private Animator anim;
-    private Rigidbody2D rb;
-    private NavMeshAgent agent;
-    private AudioSource audioSource;
     private bool PlayerHide;
     //=====================================//
+    Animator anim;
+    Rigidbody2D rb;
+    NavMeshAgent agent;
+    AudioSource audioSource;
+    //=====================================//
+    enum State {Idle, Patrol, Chase, Attack}
+
+    State _currentState;
 
     void Start()
     {
@@ -71,7 +75,6 @@ public class AItest : MonoBehaviour
             // มีผู้เล่นอยู่ในรัศมี ให้เคลื่อนที่ไปหาผู้เล่น
             anim.SetBool("isWalking", true);
             lastKnownPosition = player.position;
-            agent.SetDestination(player.position);
         }
         else
         {
@@ -95,12 +98,57 @@ public class AItest : MonoBehaviour
             Physics2D.IgnoreLayerCollision(gameObject.layer, playerLayer, true);
         }
     }
-    //============================================================//   
+    void EnterState(State state)
+    {
+        ExitState();
+        _currentState = state;
+        switch(_currentState) 
+        {
+            case State.Idle:
+                break;
+            case State.Patrol: 
+                break;
+            case State.Chase: 
+                break;
+            case State.Attack:
+                break;
+        }
+    }
+    void UpdateState()
+    {
+        switch (_currentState)
+        {
+            case State.Idle:
+                break;
+            case State.Patrol:
+                break;
+            case State.Chase:
+                agent.SetDestination(player.position);
+                break;
+            case State.Attack:
+                break;
+        }
+    }
+    void ExitState()
+    {
+        switch (_currentState)
+        {
+            case State.Idle:
+                break;
+            case State.Patrol:
+                break;
+            case State.Chase:
+                break;
+            case State.Attack:
+                break;
+        }
+    }
+
     void SetDestinationToWaypoint()
     {
-        //agent.SetDestination(waypoints[currentWaypointIndex].position); // ตั้งค่า NavMeshAgent ไปยัง Waypoint ปัจจุบัน
+        agent.SetDestination(waypoints[currentWaypointIndex].position);
     }
-    //============================================================//
+
     void Animante()
     {
         anim.SetFloat("MoveX", player.position.x - transform.position.x);
@@ -109,7 +157,7 @@ public class AItest : MonoBehaviour
         anim.SetFloat("LastMoveX", lastMoveDirection.x - transform.position.x);
         anim.SetFloat("LastMoveX", lastMoveDirection.y - transform.position.y);
     }
-    //============================================================//
+
     void Flip()
     {
         Vector3 scale = transform.localScale;
@@ -117,12 +165,11 @@ public class AItest : MonoBehaviour
         transform.localScale = scale;
         facingRight = !facingRight;
     }
-    //============================================================//
+
     private void OnDrawGizmosSelected()
     {
         // วาดวงกลมใน Scene เพื่อแสดงรัศมีการตรวจสอบ
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
-    //============================================================//
 }
