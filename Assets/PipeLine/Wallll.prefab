@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 2873900163684534670}
   - component: {fileID: 3580174608193213995}
   - component: {fileID: 3196563239201864915}
+  - component: {fileID: 8479006085259443836}
   m_Layer: 0
   m_Name: Wallll
   m_TagString: Untagged
@@ -249,14 +250,30 @@ MonoBehaviour:
   m_ShapePath:
   - {x: -0.9288206, y: -2.131635, z: 0}
   - {x: -0.9414278, y: 0.18803398, z: 0}
-  - {x: 0.9776478, y: 0.17845888, z: 0}
-  - {x: 0.9839508, y: -2.122265, z: 0}
-  m_ShapePathHash: 304570388
+  - {x: 2.8393178, y: 0.1843299, z: 0}
+  - {x: 2.85142, y: -2.128138, z: 0}
+  m_ShapePathHash: 1641400767
   m_Mesh: {fileID: 0}
-  m_InstanceId: 57368
+  m_InstanceId: -9124
   m_LocalBounds:
-    m_Center: {x: 0.021261454, y: -0.97180045, z: 0}
-    m_Extent: {x: 0.9626893, y: 1.1598345, z: 0}
+    m_Center: {x: 0.954996, y: -0.97180045, z: 0}
+    m_Extent: {x: 1.8964238, y: 1.1598345, z: 0}
+--- !u!114 &8479006085259443836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4434614842701900875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &5343756709889918755
 GameObject:
   m_ObjectHideFlags: 0

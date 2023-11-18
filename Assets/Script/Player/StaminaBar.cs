@@ -9,13 +9,13 @@ public class StaminaBar : MonoBehaviour
     public Slider staminaBar;
     private int maxStamina = 250;
     public int currentStamina;
-    private WaitForSeconds regenTick = new WaitForSeconds(0.3f);
+    private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
     private Coroutine regen;
     public static StaminaBar instance;
 
     public Vector3 offset;
     public Transform player;
-
+    float currentVelocity = 0;
 
     private void Awake()
     {
@@ -31,9 +31,9 @@ public class StaminaBar : MonoBehaviour
     }
     private void Update()
     {
-            staminaBar.gameObject.SetActive(true);
+        float maxStamina = Mathf.SmoothDamp(staminaBar.value, staminaBar.maxValue, ref currentVelocity, 100 * Time.deltaTime);
+        staminaBar.gameObject.SetActive(true);
     }
-
 
     public void UseStamina(int amount)
     {
@@ -62,7 +62,7 @@ public class StaminaBar : MonoBehaviour
 
         while (currentStamina < maxStamina)
         {
-            currentStamina += maxStamina / 8;
+            currentStamina += maxStamina / 100;
             staminaBar.value = currentStamina;
 
 

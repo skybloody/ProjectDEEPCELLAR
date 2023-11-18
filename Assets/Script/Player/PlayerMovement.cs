@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-
+    public GameObject interaction;
     public GameObject flashlight;
     public GameObject Fov;
     public GameObject Sound;
@@ -25,8 +25,11 @@ public class PlayerMovement : MonoBehaviour
     float x;
     float y;
 
+    public Vector2 boxSize = new Vector2(0.1f, 1f);
+
     void Start()
     {
+        interaction.SetActive(false);
         rb = GetComponent <Rigidbody2D>();
         staminaBar = StaminaBar.instance;
         sr = GetComponent<SpriteRenderer>();
@@ -34,15 +37,19 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.E)) 
+        {
+            CheckInteraction();
+        }
+
         ProccessMovementInput();
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
 
-        if (canInteract && Input.GetKeyDown(KeyCode.G))
+        if (canInteract && Input.GetKeyDown(KeyCode.E))
         {
             TogglePlayerHide();
         }
-
         if (playerHidden)
         {
             rb.velocity = Vector2.zero;
@@ -52,6 +59,32 @@ public class PlayerMovement : MonoBehaviour
         {
             Run();
             AniRun();
+        }
+    }
+    public void OpenInteractableIcon()
+    {
+        interaction.SetActive(true);
+    }
+
+    public void CloseInteractableIcon()
+    {
+        interaction.SetActive(false);
+    }
+
+    private void CheckInteraction()
+    {
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
+
+        if(hits.Length > 0) 
+        {
+            foreach(RaycastHit2D rc in hits) 
+            {
+                if(rc.IsInteractable())
+                {
+                    rc.Interact();
+                    return;
+                }
+            }
         }
     }
 
