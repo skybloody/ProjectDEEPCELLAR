@@ -36,7 +36,7 @@ public class FootstepSystem : MonoBehaviour
     {
         if (!footstepAudio.isPlaying)
         {
-            //footstepAudio.PlayOneShot(footstepSound);
+            footstepAudio.PlayOneShot(footstepSound);
         }
     }
 
