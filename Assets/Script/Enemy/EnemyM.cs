@@ -55,7 +55,7 @@ public class EnemyM : MonoBehaviour
         {
             // มีผู้เล่นอยู่ในรัศมี ให้เคลื่อนที่ไปหาผู้เล่น
             anim.SetBool("isWalking", true);
-            agent.speed = 200f;
+            agent.speed = 10f;
             lastKnownPosition = player.position;
             agent.SetDestination(player.position);
         }
