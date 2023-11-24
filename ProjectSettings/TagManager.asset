@@ -17,7 +17,6 @@ TagManager:
   - Wood
   - Concrete
   - Ground
-  - WayPoints
   layers:
   - Default
   - TransparentFX

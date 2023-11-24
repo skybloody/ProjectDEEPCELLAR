@@ -1,0 +1,1623 @@
+fileFormatVersion: 2
+guid: 7f7cbdfc681d7da41869d6b737a511bf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hunt_L_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1164
+        width: 111
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc6d2ce7ffeada4d96193122ae526f9
+      internalID: -867681921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1172
+        width: 121
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cc333e9ce47ca4f93524b5b7b80452
+      internalID: -2054006955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_2
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1164
+        width: 103
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e2c0c5c2d415e4e975a37bab91af4a
+      internalID: -582484123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_3
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1164
+        width: 110
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684997db621e2be45848348d485c5987
+      internalID: 1098165741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_4
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1164
+        width: 111
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bef1dcc3eda7646aafc3085b2fae69
+      internalID: -1113479915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_5
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1172
+        width: 121
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad4dd4ecd9015742a469a9711de58e1
+      internalID: 1377343380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_6
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 1164
+        width: 102
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7263e2e9e24124392acdd0339f2898
+      internalID: -1363133652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_7
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 1163
+        width: 114
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261158a1566c5cc41989a592154b8c69
+      internalID: 454266699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_8
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1164
+        width: 103
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddf0f5c82112cc4c8a5fd384c877870
+      internalID: -1415577450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_9
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 1163
+        width: 85
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1cbcd6d5a85b448aa9cb5366f80d4f
+      internalID: -1764061347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_10
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 1163
+        width: 95
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9493f9f8862c144f9dd035c5013c7a7
+      internalID: 533291280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_11
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 1163
+        width: 87
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0e5d93aa9c5b44296d95841d6c7144
+      internalID: 735892672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_12
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 1283
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab52dc9224a902142be7eada585bac9d
+      internalID: -172907937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_13
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 1161
+        width: 79
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febae7281c05fd5409b8ba93f1e20798
+      internalID: 424958333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_14
+      rect:
+        serializedVersion: 2
+        x: 2522
+        y: 1161
+        width: 108
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea78fa3e7d90234aa38f35e8a86dda2
+      internalID: 438834793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_15
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 1163
+        width: 99
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732e66f097c7cd043a81469ec2da2cd2
+      internalID: 26650297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_16
+      rect:
+        serializedVersion: 2
+        x: 2914
+        y: 1161
+        width: 87
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0460dcefbbd334f84c3e5823f773bb
+      internalID: -1176973491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_17
+      rect:
+        serializedVersion: 2
+        x: 3109
+        y: 1163
+        width: 77
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09574254aa43184ea23f5723b15dd8e
+      internalID: 1692496574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_18
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1277
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22d6628daff1ef498ecd38fe79fd3a2
+      internalID: 1941438089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_19
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 936
+        width: 156
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0247d6c7dd69fe41ac7fc4c7733361a
+      internalID: -1683981972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_20
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 936
+        width: 156
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1e4962d55fa024aa087c9a6730a510
+      internalID: 1610819598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_21
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 946
+        width: 157
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6372cfe4c439ada4da14ae14671064fa
+      internalID: 2060591693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_22
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 935
+        width: 159
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01b35aed05374c43a892f1d7b67dfd0
+      internalID: 1407611857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_23
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 936
+        width: 157
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68eabc3f1f1dbc44abbb99ee73423833
+      internalID: 945543106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_24
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 936
+        width: 159
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7346fe1832f2caa4b97d8872df87fde9
+      internalID: -1525962806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_25
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 946
+        width: 159
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222245241b20a9e44bed7fb7bcf9221a
+      internalID: -1703295180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_26
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 949
+        width: 159
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd250ef2abf94c42a66bdfdf89ff46b
+      internalID: 618196408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_27
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 947
+        width: 159
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6fd84e13e5ba64e86629a842cbf12f
+      internalID: 1440171860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_28
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 949
+        width: 159
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f264455d444bd46a214ca0fa6e2563
+      internalID: 1345972210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_29
+      rect:
+        serializedVersion: 2
+        x: 2497
+        y: 947
+        width: 159
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0d4895435abc343b9bccc7c961bf7c
+      internalID: -536415419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_30
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 947
+        width: 159
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86d63b96cd50364dbeaaf764b8952a5
+      internalID: -2121659519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_31
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 947
+        width: 157
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef42e65524a50c4ab9f72a881c0810e
+      internalID: -1708229043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_32
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 946
+        width: 157
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726a46ea18a8d634386c64d7458a394f
+      internalID: -1558199127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_33
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 733
+        width: 168
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2812dbdd9a740f74fa71f2f298ed86c6
+      internalID: -843488559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_34
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 735
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ccaa46f6df311449b6eb5cff9d7a01e
+      internalID: 1763440440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_35
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 733
+        width: 168
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b18b27313a62047af786a1baf0ae0d
+      internalID: 389546098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_36
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 733
+        width: 168
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd45b7420166f704b870915838dafc20
+      internalID: 1260949976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_37
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 738
+        width: 167
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9dbe04d69b0e74c8ae90149992f6e8
+      internalID: -882095013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_38
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 733
+        width: 170
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecbd9d409877c140b787ffec220daf3
+      internalID: 1166492409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_39
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 732
+        width: 168
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bb7de3ffa7ff846a6d49d1e5fd4189
+      internalID: -543074458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_40
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 735
+        width: 170
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa71f0a3a4ccde84db0dbdb642da0c66
+      internalID: 870712149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_41
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 730
+        width: 168
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e346f1075d5a944418000418c86369a7
+      internalID: 1714528466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_42
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 732
+        width: 168
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed9313d9c7b22c4da13f6699e0fc235
+      internalID: 2062180074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_43
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 515
+        width: 133
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19249aa0bd4784a43a3585f1b33e64fe
+      internalID: -507066190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_44
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 520
+        width: 132
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2047361b168ca4bacf03dabda272d9
+      internalID: -1771778031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_45
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 516
+        width: 140
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741ed9339b8a6db44b8988e4c8a391bc
+      internalID: 1915331770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_46
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 520
+        width: 132
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e563cca1596dba249b089f5d2de8fca4
+      internalID: 1129551972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_47
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 516
+        width: 133
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e69e8b11436824fa83cf900f907e14
+      internalID: -237970677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_48
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 520
+        width: 133
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3875e184aeb04dc449d204fd2c23ad57
+      internalID: -436948453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_49
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 518
+        width: 138
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7817f2925d20d174a9fd88245c31bdc5
+      internalID: -276162951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_50
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 518
+        width: 133
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c6060beef25a5448e4592259e94ac6
+      internalID: -960096872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_51
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 515
+        width: 134
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2db2c6b99155f4ab16414a8a6a731f
+      internalID: -2021269200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_52
+      rect:
+        serializedVersion: 2
+        x: 2497
+        y: 516
+        width: 133
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9f301ad8910c047b40137bf6c313dd
+      internalID: 132688738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_53
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 516
+        width: 138
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40de660bef19bf438d6c56f095f721b
+      internalID: 1545492309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_54
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 516
+        width: 133
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce1f7f55a9ce054cbf63eac6972f7f1
+      internalID: 991570543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_55
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 518
+        width: 131
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee4ecb43c48690458adaa25d731ede7
+      internalID: 227886400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_56
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 310
+        width: 135
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98bbb7ad31df21469dedc6969b950ba
+      internalID: -1061470230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_57
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 310
+        width: 145
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2b43f221a654b4a8144c06d05c1bd0
+      internalID: -132422506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_58
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 301
+        width: 143
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f27201c22697d42a73b39f0f6ffbac
+      internalID: -180924654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_59
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 307
+        width: 140
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8989ab28edfe6d846bf0717246b7c381
+      internalID: 47654876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_60
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 307
+        width: 141
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266390956031a2b49a70558cedb8a8f2
+      internalID: 1387567231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_61
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 307
+        width: 143
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e795ba39585344eb98d0c7eec2fa8a
+      internalID: -1915548254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_62
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 301
+        width: 143
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadefee313d31ad478567ee4cef52265
+      internalID: 1419757498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_63
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 301
+        width: 143
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d977aed36958684780c0ccdbb47474a
+      internalID: 1734351607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_64
+      rect:
+        serializedVersion: 2
+        x: 2497
+        y: 296
+        width: 146
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01914957ac002542b1cdde9e9677bde
+      internalID: 1928710461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_65
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 296
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b0559d4b6c0184ca4b8fbaaa66172f
+      internalID: 1932016139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_66
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 298
+        width: 146
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d246631c7e85dc4fb3839c24c944f45
+      internalID: -1230776384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_L_67
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 299
+        width: 146
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fccc27777fe7a1340b47970d6ec95723
+      internalID: -1716411102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Hunt_L_0: -867681921
+      Hunt_L_1: -2054006955
+      Hunt_L_10: 533291280
+      Hunt_L_11: 735892672
+      Hunt_L_12: -172907937
+      Hunt_L_13: 424958333
+      Hunt_L_14: 438834793
+      Hunt_L_15: 26650297
+      Hunt_L_16: -1176973491
+      Hunt_L_17: 1692496574
+      Hunt_L_18: 1941438089
+      Hunt_L_19: -1683981972
+      Hunt_L_2: -582484123
+      Hunt_L_20: 1610819598
+      Hunt_L_21: 2060591693
+      Hunt_L_22: 1407611857
+      Hunt_L_23: 945543106
+      Hunt_L_24: -1525962806
+      Hunt_L_25: -1703295180
+      Hunt_L_26: 618196408
+      Hunt_L_27: 1440171860
+      Hunt_L_28: 1345972210
+      Hunt_L_29: -536415419
+      Hunt_L_3: 1098165741
+      Hunt_L_30: -2121659519
+      Hunt_L_31: -1708229043
+      Hunt_L_32: -1558199127
+      Hunt_L_33: -843488559
+      Hunt_L_34: 1763440440
+      Hunt_L_35: 389546098
+      Hunt_L_36: 1260949976
+      Hunt_L_37: -882095013
+      Hunt_L_38: 1166492409
+      Hunt_L_39: -543074458
+      Hunt_L_4: -1113479915
+      Hunt_L_40: 870712149
+      Hunt_L_41: 1714528466
+      Hunt_L_42: 2062180074
+      Hunt_L_43: -507066190
+      Hunt_L_44: -1771778031
+      Hunt_L_45: 1915331770
+      Hunt_L_46: 1129551972
+      Hunt_L_47: -237970677
+      Hunt_L_48: -436948453
+      Hunt_L_49: -276162951
+      Hunt_L_5: 1377343380
+      Hunt_L_50: -960096872
+      Hunt_L_51: -2021269200
+      Hunt_L_52: 132688738
+      Hunt_L_53: 1545492309
+      Hunt_L_54: 991570543
+      Hunt_L_55: 227886400
+      Hunt_L_56: -1061470230
+      Hunt_L_57: -132422506
+      Hunt_L_58: -180924654
+      Hunt_L_59: 47654876
+      Hunt_L_6: -1363133652
+      Hunt_L_60: 1387567231
+      Hunt_L_61: -1915548254
+      Hunt_L_62: 1419757498
+      Hunt_L_63: 1734351607
+      Hunt_L_64: 1928710461
+      Hunt_L_65: 1932016139
+      Hunt_L_66: -1230776384
+      Hunt_L_67: -1716411102
+      Hunt_L_7: 454266699
+      Hunt_L_8: -1415577450
+      Hunt_L_9: -1764061347
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

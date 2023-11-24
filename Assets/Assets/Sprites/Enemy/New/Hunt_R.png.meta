@@ -1,0 +1,1602 @@
+fileFormatVersion: 2
+guid: 0371c34b5b8faf44aa2b1d814003a74c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hunt_R_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1163
+        width: 77
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618a2a19e9f16c2438a3535ccd89f694
+      internalID: 1732572539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1161
+        width: 87
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06456f0fae2a21642aacc45ceb41cec1
+      internalID: -2035624930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_2
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1163
+        width: 99
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e2da0ae97b5ca4eb8c489e0cf53de3
+      internalID: -1924428116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_3
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1161
+        width: 108
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ba4a9e3d75fe04aa8f2d8e990214e3
+      internalID: -657974167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_4
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1161
+        width: 79
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c14f5459bd6ced4488d4a545614b5c3
+      internalID: -124282531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_6
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1163
+        width: 87
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0076a0fac809ac640b33d0539952c8ce
+      internalID: 1574579237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_7
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1163
+        width: 95
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f9699b43fc19847a423a1287b5e094
+      internalID: 315971063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_8
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1163
+        width: 85
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc4863f4f54ea949aa904f11afd6703
+      internalID: 1840049279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_9
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1164
+        width: 103
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e430eed75919d4bba66b56e39e16a1
+      internalID: -1257344722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_10
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 1163
+        width: 114
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd816f56513cb8643be384dec5467fd9
+      internalID: -1004936161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_11
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 1164
+        width: 102
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6c8c0f73fa3214fad7493c839f7523
+      internalID: -849482607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_12
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 1172
+        width: 121
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0afc6904fc56314c875067188d0d7da
+      internalID: 605665366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_13
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 1164
+        width: 111
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7382e92757e07499de5ed4b59e57e9
+      internalID: 1110375723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_14
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 1164
+        width: 110
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a738afa44da9f9046b05f6da7d3f173e
+      internalID: -1644559121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_15
+      rect:
+        serializedVersion: 2
+        x: 2727
+        y: 1164
+        width: 103
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705eeb23c9ee1c34fbb701345c2b77e2
+      internalID: 325857425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_16
+      rect:
+        serializedVersion: 2
+        x: 2901
+        y: 1172
+        width: 121
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02d82a8581c94046b61939b0218b848
+      internalID: -348664791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_17
+      rect:
+        serializedVersion: 2
+        x: 3096
+        y: 1164
+        width: 111
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1337c21f8ac594b98b6b0d2da56c64
+      internalID: -1861505445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_18
+      rect:
+        serializedVersion: 2
+        x: 2522
+        y: 1277
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d34e22a9750f444b69baea15fa20ee
+      internalID: -128608238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_19
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 946
+        width: 157
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d3ea45935e4b64e9cac13482ceb858
+      internalID: 70380993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_20
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 947
+        width: 157
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59958dccfb9a7b6448434a79f495f18e
+      internalID: -593483675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_21
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 947
+        width: 159
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35fe91f5ba7f364080a8ab734ad3b3b
+      internalID: -2050929438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_22
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 947
+        width: 159
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf9f6eec577f2543a2cc97e84f011ce
+      internalID: 2139149633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_23
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 949
+        width: 159
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5825cc9631f011b48a0ca5455c286a5c
+      internalID: 1836321119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_24
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 947
+        width: 159
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d0a816db188e94caf835465e289567
+      internalID: -1089562173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_25
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 949
+        width: 159
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b8b637d438c9740982e7af4939b6cc
+      internalID: 722394836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_26
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 946
+        width: 159
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b002c6bd5d89ed4fb9d1918a1567641
+      internalID: 257182820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_27
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 936
+        width: 159
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23eddf4c6aca76146a26b7e256e25ad1
+      internalID: 1979634103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_28
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 936
+        width: 157
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a78d951d9671941a19967c7c71556c
+      internalID: -1511085832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_29
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 935
+        width: 159
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97055fe3310bb04797c3a7adfb1cd3d
+      internalID: -1162111444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_30
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 946
+        width: 157
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f994d91be3c44954790581e0b9f2cbc4
+      internalID: 1019653341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_31
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 936
+        width: 156
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d44d595c62716c4596c68d10b398950
+      internalID: 163447533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_32
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 936
+        width: 156
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3b91d10aeb5c344a7b38ea71bb04fa
+      internalID: -165166901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_33
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 732
+        width: 168
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee96ed58540f292448e45c4d64fc5cd9
+      internalID: 733655121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_34
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 730
+        width: 168
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222edb3f4496b7940b4867262cf2ad70
+      internalID: -677999972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_35
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 735
+        width: 170
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7996e327ccf2f49a1ad7ac1cbb7932
+      internalID: 914377184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_36
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 732
+        width: 168
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e10eae3ccffa7945913667d9e672c77
+      internalID: 2068155313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_37
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 733
+        width: 170
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c074f9767edaf8544a43eba6981359fe
+      internalID: -10249642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_38
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 738
+        width: 167
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e4043c4a1219e4f97049ae1ad450ef
+      internalID: 545079000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_39
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 733
+        width: 168
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65f877bdc59417479eec634ea04b924
+      internalID: 802706339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_40
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 733
+        width: 168
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d393ca1c232184588345136e325a75
+      internalID: 1678091335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_41
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 735
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c13d33be191e6d45ac889bf3918f982
+      internalID: -1862704158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_42
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 733
+        width: 168
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea1fc52b3a5bda4ea1190771c8fc7f7
+      internalID: 791718244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_43
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 518
+        width: 131
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bf15bcef3630848ab3228857949970
+      internalID: 1186460867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_44
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 516
+        width: 133
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4144da060455d2b4f8a09dd711e8c306
+      internalID: -1813327826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_45
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 516
+        width: 138
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914a8d604434f6346b8f29830d498f9f
+      internalID: -618666449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_46
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 516
+        width: 133
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce1351887e79684585e683bc1cbe75e
+      internalID: 1594236476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_47
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 515
+        width: 134
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5da51f13fcf65f41b6a045202cf2e3d
+      internalID: -2092961719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_48
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 518
+        width: 133
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7540ac2ef463a034fabd877d0a81ac28
+      internalID: 901958303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_49
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 518
+        width: 138
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21e7d900aaeabb49a51661b7dbbecb5
+      internalID: -1065316164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_50
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 520
+        width: 133
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f74fa6523b2b534288294e88d7632f0
+      internalID: 611687412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_51
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 516
+        width: 133
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6723337f155d84e817390ebc05356f
+      internalID: -1256804108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_52
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 520
+        width: 132
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e544b62509644349b34b8eaca8eeb4d
+      internalID: 1149442492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_53
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 516
+        width: 140
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d3b4f5887647745acd91a911733ddf
+      internalID: 484805358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_54
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 520
+        width: 132
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4595ec1567c6f4d90a3dbc42b045b2
+      internalID: -1335345254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_55
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 515
+        width: 133
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c23e3f48b070e46a6ae1b82f577728
+      internalID: 1516910467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_56
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 299
+        width: 146
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f25143dfd69d944a5872ad750cdfdc
+      internalID: 1399787178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_57
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 298
+        width: 146
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19099ac7abc98540b038bfadc6bbad2
+      internalID: -1371395277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_58
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 296
+        width: 144
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3746d957c19f0a1499881ac2b889f2a9
+      internalID: 1118058069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_59
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 296
+        width: 146
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9a758cbe9fe99478a3c50c4ca2e657
+      internalID: -2040008716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_60
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 301
+        width: 143
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed21969eee2a864abf08f415b740c35
+      internalID: 932184839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_61
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 301
+        width: 143
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49091cc9839242740a634d2a52021f76
+      internalID: -2082404071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_62
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 307
+        width: 143
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb52d4b4acd411428fe29a73e4442f7
+      internalID: 1927244571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_63
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 307
+        width: 141
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05776f7b06642c046870f7a4b25dff95
+      internalID: -425133675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_64
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 307
+        width: 140
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5048fcb93b98b4c90ba74d335badd0
+      internalID: -582417223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_65
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 301
+        width: 143
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407411662ef2abd42a3e0258abd7add0
+      internalID: -1416017930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_66
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 310
+        width: 145
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29ca23f99bab314eb61fa1835aac5f2
+      internalID: 974580382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hunt_R_67
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 310
+        width: 135
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8b79d7d5462904084b20a600312ec7
+      internalID: 638974354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Hunt_R_0: 1732572539
+      Hunt_R_1: -2035624930
+      Hunt_R_10: -1004936161
+      Hunt_R_11: -849482607
+      Hunt_R_12: 605665366
+      Hunt_R_13: 1110375723
+      Hunt_R_14: -1644559121
+      Hunt_R_15: 325857425
+      Hunt_R_16: -348664791
+      Hunt_R_17: -1861505445
+      Hunt_R_18: -128608238
+      Hunt_R_19: 70380993
+      Hunt_R_2: -1924428116
+      Hunt_R_20: -593483675
+      Hunt_R_21: -2050929438
+      Hunt_R_22: 2139149633
+      Hunt_R_23: 1836321119
+      Hunt_R_24: -1089562173
+      Hunt_R_25: 722394836
+      Hunt_R_26: 257182820
+      Hunt_R_27: 1979634103
+      Hunt_R_28: -1511085832
+      Hunt_R_29: -1162111444
+      Hunt_R_3: -657974167
+      Hunt_R_30: 1019653341
+      Hunt_R_31: 163447533
+      Hunt_R_32: -165166901
+      Hunt_R_33: 733655121
+      Hunt_R_34: -677999972
+      Hunt_R_35: 914377184
+      Hunt_R_36: 2068155313
+      Hunt_R_37: -10249642
+      Hunt_R_38: 545079000
+      Hunt_R_39: 802706339
+      Hunt_R_4: -124282531
+      Hunt_R_40: 1678091335
+      Hunt_R_41: -1862704158
+      Hunt_R_42: 791718244
+      Hunt_R_43: 1186460867
+      Hunt_R_44: -1813327826
+      Hunt_R_45: -618666449
+      Hunt_R_46: 1594236476
+      Hunt_R_47: -2092961719
+      Hunt_R_48: 901958303
+      Hunt_R_49: -1065316164
+      Hunt_R_5: 1222749467
+      Hunt_R_50: 611687412
+      Hunt_R_51: -1256804108
+      Hunt_R_52: 1149442492
+      Hunt_R_53: 484805358
+      Hunt_R_54: -1335345254
+      Hunt_R_55: 1516910467
+      Hunt_R_56: 1399787178
+      Hunt_R_57: -1371395277
+      Hunt_R_58: 1118058069
+      Hunt_R_59: -2040008716
+      Hunt_R_6: 1574579237
+      Hunt_R_60: 932184839
+      Hunt_R_61: -2082404071
+      Hunt_R_62: 1927244571
+      Hunt_R_63: -425133675
+      Hunt_R_64: -582417223
+      Hunt_R_65: -1416017930
+      Hunt_R_66: 974580382
+      Hunt_R_67: 638974354
+      Hunt_R_7: 315971063
+      Hunt_R_8: 1840049279
+      Hunt_R_9: -1257344722
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

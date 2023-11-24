@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        target = FindObjectOfType<PlayerMovement>().transform;
+        target = FindObjectOfType<PlayerM>().transform;
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
     }
