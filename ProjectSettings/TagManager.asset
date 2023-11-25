@@ -73,6 +73,9 @@ TagManager:
   - name: Light
     uniqueID: 1161619861
     locked: 0
+  - name: Object
+    uniqueID: 1659055129
+    locked: 0
   - name: Player
     uniqueID: 448954651
     locked: 0
@@ -81,7 +84,4 @@ TagManager:
     locked: 0
   - name: Item
     uniqueID: 4169333287
-    locked: 0
-  - name: Object
-    uniqueID: 1659055129
     locked: 0
