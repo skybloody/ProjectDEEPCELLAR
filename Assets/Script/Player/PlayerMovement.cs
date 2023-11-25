@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 CheckInteraction();
-                TryCollectKey();
+                //TryCollectKey();
             }
 
 
@@ -137,7 +137,7 @@ public class PlayerMovement : MonoBehaviour
     {
         canMove = move;
     }
-    private void TryCollectKey()
+    /*private void TryCollectKey()
     {
         // ใช้ Raycast เพื่อตรวจสอบว่ามี key อยู่หน้า player หรือไม่
         RaycastHit hit;
@@ -153,5 +153,5 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
 }

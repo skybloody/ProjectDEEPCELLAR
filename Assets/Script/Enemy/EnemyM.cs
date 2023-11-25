@@ -11,7 +11,7 @@ public class EnemyM : MonoBehaviour
     public Transform DetectionPoint;
     public Transform[] waypoints;
 
-    public float Speed = 5.0f;
+    public float Speed = 3f;
     public float followDistance = 3.0f;
     public float detectionRadius = 2.0f;
 
@@ -55,7 +55,7 @@ public class EnemyM : MonoBehaviour
         {
             // มีผู้เล่นอยู่ในรัศมี ให้เคลื่อนที่ไปหาผู้เล่น
             anim.SetBool("isWalking", true);
-            agent.speed = 10f;
+            agent.speed = 5f;
             lastKnownPosition = player.position;
             agent.SetDestination(player.position);
         }

@@ -39,7 +39,7 @@ public class LockerText : MonoBehaviour
                         StopCoroutine(messageCoroutines[i]);
                     }
 
-                    messageCoroutines[i] = StartCoroutine(DisplayMessageForTime(" press E ", displayTime, i));
+                    messageCoroutines[i] = StartCoroutine(DisplayMessageForTime(" [E] ", displayTime, i));
                     displayMessages[i] = true;
                 }
             }
