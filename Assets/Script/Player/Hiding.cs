@@ -8,7 +8,7 @@ public class Hiding : MonoBehaviour
 
     public GameObject flashlight;
     public GameObject Fov;
-    public GameObject Sound;
+    
     public SpriteRenderer sr; 
     
 
@@ -32,17 +32,21 @@ public class Hiding : MonoBehaviour
 
         if (playerHidden)
         {
-            playermovement.rb.velocity = Vector2.zero; 
+            playermovement.rb.velocity = Vector2.zero;
+        }
+
+        if (!canInteract)
+        {
+            canInteract = false;
         }
     }
 
-    private void TogglePlayerHide()
+    private IEnumerator TogglePlayerHideCoroutine()
     {
         playerHidden = !playerHidden;
 
         if (playerHidden)
         {
-            sr.sortingOrder = -1;
             Color newColor = sr.color;
             newColor.a = 0f;
             sr.color = newColor;
@@ -54,7 +58,6 @@ public class Hiding : MonoBehaviour
 
         else
         {
-            sr.sortingOrder = 3;
             Color newColor = sr.color;
             newColor.a = 1f;
             sr.color = newColor;
@@ -65,19 +68,32 @@ public class Hiding : MonoBehaviour
 
         }
         playermovement.SetCanMove(!playerHidden);
+
+        yield return new WaitForSeconds(0.1f);
+
+        canInteract = true;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void TogglePlayerHide()
     {
-        if (other.CompareTag("Locker"))
+        
+        canInteract = false;
+
+        
+        StartCoroutine(TogglePlayerHideCoroutine());
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Locker"))
         {
             canInteract = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D collider)
     {
-        if (other.CompareTag("Locker"))
+        if (collider.CompareTag("Locker"))
         {
             canInteract = false;
         }
