@@ -7,12 +7,21 @@ public class Animation : MonoBehaviour
     public Animator animator;
     private Vector2 moveMent;
     private Vector2 LastMovelDirection;
+    private PlayerMovement playermovement;
+    private StaminaBar staminaBar;
 
     private bool facingleft = true;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        playermovement = GetComponent<PlayerMovement>();
+    }
 
     void Update()
     {
         PAnimation();
+        UpdateAnimator();
 
         if (moveMent.x > 0 && !facingleft || moveMent.x < 0 && facingleft)
         {
@@ -47,5 +56,16 @@ public class Animation : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
         facingleft = !facingleft;
+    }
+    private void UpdateAnimator()
+    {
+        if (playermovement.IsSprinting && playermovement.StaminaBar.currentStamina > 0)
+        {
+            animator.SetBool("IsSprinting", true);
+        }
+        else
+        {
+            animator.SetBool("IsSprinting", false);
+        }
     }
 }

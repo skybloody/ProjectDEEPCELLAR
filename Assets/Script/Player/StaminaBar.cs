@@ -52,11 +52,11 @@ public class StaminaBar : MonoBehaviour
         }
         else
         {
-            Debug.Log("Not enough stamina");
+           
         }
     }
 
-    private IEnumerator RegenStamina()
+    public IEnumerator RegenStamina()
     {
         yield return new WaitForSeconds(2);
 

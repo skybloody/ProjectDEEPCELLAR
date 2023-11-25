@@ -13,11 +13,11 @@ TagManager:
   - Goal
   - Locker
   - Audio
-  - Dirt
-  - Wood
   - Concrete
   - Ground
   - WayPoints
+  - Item
+  - Test
   layers:
   - Default
   - TransparentFX
@@ -32,7 +32,7 @@ TagManager:
   - Locker
   - Door
   - Particle
-  - 
+  - Item
   - Prop
   - Waypoint
   - Walls
@@ -40,7 +40,7 @@ TagManager:
   - 
   - 
   - 
-  - PP
+  - 
   - 
   - 
   - 
@@ -52,11 +52,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Floor
     uniqueID: 1991396391
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Wall
     uniqueID: 956538439
@@ -66,6 +66,9 @@ TagManager:
     locked: 0
   - name: Door
     uniqueID: 42924549
+    locked: 0
+  - name: hidden
+    uniqueID: 2325144807
     locked: 0
   - name: Object
     uniqueID: 1659055129
@@ -78,4 +81,7 @@ TagManager:
     locked: 0
   - name: Top
     uniqueID: 3649453803
+    locked: 0
+  - name: Item
+    uniqueID: 4169333287
     locked: 0

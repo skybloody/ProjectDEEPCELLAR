@@ -4,22 +4,27 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     public GameObject interaction;
-    public GameObject flashlight;
-    public GameObject Fov;
-    public GameObject Sound;
 
-    private StaminaBar staminaBar;
+    public StaminaBar staminaBar;
     public float Speed = 1f;
     public float sprintSpeed = 5f;
-    private bool isSprinting = false;
+    public bool isSprinting = false;
+    public bool IsSprinting
+    {
+        get { return isSprinting; }
+    }
+
+    public StaminaBar StaminaBar
+    {
+        get { return staminaBar; }
+    }
 
     private bool playerHidden = false;
-    private bool canInteract = false;
-    public SpriteRenderer sr;
-    public Animator animator;
-    
+    private bool canMove = true;
+
+
     private Vector2 moveMent;
     private Vector2 LastMovelDirection;
     float x;
@@ -32,33 +37,29 @@ public class PlayerMovement : MonoBehaviour
         interaction.SetActive(false);
         rb = GetComponent <Rigidbody2D>();
         staminaBar = StaminaBar.instance;
-        sr = GetComponent<SpriteRenderer>();
+       
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E)) 
+        if (canMove)
         {
-            CheckInteraction();
-        }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                CheckInteraction();
+                TryCollectKey();
+            }
 
-        ProccessMovementInput();
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
 
-        if (canInteract && Input.GetKeyDown(KeyCode.E))
-        {
-            TogglePlayerHide();
-        }
-        if (playerHidden)
-        {
-            rb.velocity = Vector2.zero;
-        }
-        
-        if (!playerHidden)
-        {
-            Run();
-            AniRun();
+            ProccessMovementInput();
+            x = Input.GetAxisRaw("Horizontal");
+            y = Input.GetAxisRaw("Vertical");
+
+            if (!playerHidden)
+            {
+                Run();
+                AniRun();
+            }
         }
     }
     public void OpenInteractableIcon()
@@ -110,17 +111,17 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isSprinting && staminaBar.currentStamina > 0)
             {
-                animator.SetBool("IsSprinting", true);
+
                 rb.velocity = moveMent.normalized * sprintSpeed;
             }
             else
             {
-                animator.SetBool("IsSprinting", false);
+
                 rb.velocity = moveMent.normalized * Speed;
             }
         }
     }
-    void Run()
+    private void Run()
     {
         if (Input.GetKey(KeyCode.LeftShift) && staminaBar.currentStamina > 0)
         {
@@ -132,42 +133,25 @@ public class PlayerMovement : MonoBehaviour
             isSprinting = false;
         }
     }
-
-    private void TogglePlayerHide()
+    public void SetCanMove(bool move)
     {
-        playerHidden = !playerHidden;
-
-        if (playerHidden)
-        {
-            sr.sortingOrder = 0;
-            sr.sortingLayerName = "Hidden";
-            flashlight.SetActive(false);
-            Fov.SetActive(false);
-        }
-
-        else
-        {
-            sr.sortingOrder = 3;
-            sr.sortingLayerName = "Player";
-            flashlight.SetActive(true);
-            Fov.SetActive(true);
-
-        }
-
+        canMove = move;
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private void TryCollectKey()
     {
-        if (other.CompareTag("Locker"))
+        // ใช้ Raycast เพื่อตรวจสอบว่ามี key อยู่หน้า player หรือไม่
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 2f))
         {
-            canInteract = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Locker"))
-        {
-            canInteract = false;
+            if (hit.collider.CompareTag("Key"))
+            {
+                // เรียกฟังก์ชันใน Script ของ key เพื่อทำการเก็บ key
+                KeyDoor keyController = hit.collider.GetComponent<KeyDoor>();
+                if (keyController != null)
+                {
+                    keyController.CollectKey();
+                }
+            }
         }
     }
 }
