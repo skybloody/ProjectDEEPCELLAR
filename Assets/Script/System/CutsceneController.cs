@@ -5,16 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class CutsceneController : MonoBehaviour
 {
-    void StartCutscene()
-    {
-        // ทำ cutscene ที่นี่
 
-        // เมื่อ cutscene จบ
-        SceneManager.LoadScene("NextScene");
-    }
-    void EndCutscene()
+    private void Start()
     {
-        // เมื่อ cutscene จบ
-        SceneManager.LoadScene("NextScene");
+        StartCoroutine(NextScene());
     }
+    IEnumerator NextScene()
+    { 
+     yield return new WaitForSeconds(8.3f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
 }
