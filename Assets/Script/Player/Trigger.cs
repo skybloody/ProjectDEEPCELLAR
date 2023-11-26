@@ -4,31 +4,29 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
-    public GameObject prefabWithSpriteRenderer;
-    private SpriteRenderer spriteRenderer;
+    public AudioClip collisionSound; // เสียงที่จะเล่นเมื่อมีการชน
 
-    private void Start()
+    private AudioSource audioSource;
+
+    void Start()
     {
-        spriteRenderer = prefabWithSpriteRenderer.GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Test"))
         {
-            Color newColor = spriteRenderer.color;
-            newColor.a = 0.5f;
-            spriteRenderer.color = newColor;
+            // มีการชนกับ Obstacle
+            PlayCollisionSound();
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void PlayCollisionSound()
     {
-        if (other.CompareTag("Player"))
+        if (collisionSound != null)
         {
-            Color newColor = spriteRenderer.color;
-            newColor.a = 1f;
-            spriteRenderer.color = newColor;
+            audioSource.PlayOneShot(collisionSound);
         }
     }
 }

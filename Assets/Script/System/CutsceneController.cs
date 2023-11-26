@@ -5,14 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class CutsceneController : MonoBehaviour
 {
+    private bool cutsceneStarted = false;
 
-    private void Start()
+    void Update()
     {
-        StartCoroutine(NextScene());
+        // ตรวจสอบว่า Cutscene ยังไม่เริ่ม
+        if (!cutsceneStarted)
+        {
+            // ตรวจสอบเงื่อนไขที่ต้องการเพื่อเริ่ม Cutscene (เช่น การกดปุ่ม)
+            if (Input.GetKeyDown(KeyCode.Space)) // ตัวอย่าง: กดปุ่ม Space เพื่อเริ่ม Cutscene
+            {
+                cutsceneStarted = true;
+                StartCoroutine(NextScene());
+            }
+        }
     }
+
     IEnumerator NextScene()
-    { 
-     yield return new WaitForSeconds(8.3f);
+    {
+        yield return new WaitForSeconds(8.3f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
