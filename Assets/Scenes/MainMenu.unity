@@ -2525,10 +2525,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 155580844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -300, y: 350}
-  m_SizeDelta: {x: 1200, y: 375}
+  m_SizeDelta: {x: -720, y: -705}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &618486399
 MonoBehaviour:
@@ -7015,7 +7015,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CutScene
+          m_StringArgument: LevelDesign
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &2069122272
