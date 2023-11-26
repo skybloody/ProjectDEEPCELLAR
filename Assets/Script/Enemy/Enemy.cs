@@ -1,60 +1,49 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Windows;
 
-public class Enemy : MonoBehaviour
+public class EnemyFollowPlayer : MonoBehaviour
 {
-    private Transform target;
-    public Transform homePos;
-    [SerializeField]
-    private float speed;
-    [SerializeField]
-    private float maxRange;
-    [SerializeField]
-    private float minRange;
-    enum State {Idle, Patrol, Chase, Attack}
-    State _currentState;
-    NavMeshAgent _agent;
-    Animator _animator;
+    public LayerMask playerLayer;
+    public Transform player;  
+    private NavMeshAgent agent;
+    private bool PlayerHide;
+    private Animator anim;
 
     void Start()
     {
-        target = FindObjectOfType<PlayerM>().transform;
-        _agent = GetComponent<NavMeshAgent>();
-        _animator = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     void Update()
     {
         transform.rotation = Quaternion.Euler(0, 0, 0);
-        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position)>= minRange)
-        {
-            Chase();
-        }
-        else if (Vector3.Distance(target.position, transform.position) >= maxRange)
-        {
-            GoHome();
-        }
-    }
+        // ตรวจสอบระยะห่างระหว่างศัตรูและผู้เล่น
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-    void Chase()
-    {
-        _animator.SetBool("isMoving", true);
-        _animator.SetFloat("moveX", (target.position.x - transform.position.x));
-        _animator.SetFloat("moveY", (target.position.y - transform.position.y));
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
-    }
-    public void GoHome()
-    {
-        _animator.SetFloat("moveX", (homePos.position.x - transform.position.x));
-        _animator.SetFloat("moveY", (homePos.position.y - transform.position.y));
-        transform.position = Vector3.MoveTowards(transform.position, homePos.position, speed * Time.deltaTime);
-        
-        if(Vector3.Distance(transform.position, homePos.position) == 0)
+        // หากระยะห่างน้อยกว่าหรือเท่ากับระยะที่ต้องการ
+        if (distanceToPlayer <= 2f)  // 10f คือระยะที่ต้องการให้ติดตาม
         {
-            _animator.SetBool("isMoving", false);
+            anim.SetBool("isWalking", true);
+            // ตั้งค่าตำแหน่งที่ต้องการให้ศัตรูติดตาม
+            agent.SetDestination(player.position);
         }
+        if (!PlayerHide)
+        {
+            // ตรวจสอบการชนกับ Player ปกติ
+        }
+        else
+        {
+            // ไม่ตรวจสอบการชนกับ Player ที่ถูกซ่อน
+            Physics2D.IgnoreLayerCollision(gameObject.layer, playerLayer, true);
+        }
+    }
+    void Animante()
+    {
+        anim.SetFloat("MoveX", agent.velocity.x);
+        anim.SetFloat("MoveY", agent.velocity.y);
+        anim.SetFloat("MoveMagnitude", agent.velocity.magnitude);
     }
 }

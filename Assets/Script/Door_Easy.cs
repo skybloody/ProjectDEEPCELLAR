@@ -9,16 +9,13 @@ public class Door_Easy : MonoBehaviour
     public GameObject door;
     public Animator animator;
     public bool Action = false;
-    AudioManager audioManager;
     void Awake()
     {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            audioManager.PlaySFX(audioManager.keycard);
             Debug.Log("key picked up");
             door.GetComponent<BoxCollider2D>().enabled = false;
             if (Action == true)

@@ -10,21 +10,16 @@ public class Note_Paper : MonoBehaviour
 
     public GameObject MessagePanel;
     public bool Action = false;
-    AudioManager audioManager;
     void Start()
     {
         MessagePanel.SetActive(false);
     }
-    void Awake()
-    {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-    }
+   
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            audioManager.PlaySFX(audioManager.readnote);
             if (Action == true)
             {
                 MessagePanel.SetActive(false);

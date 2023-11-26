@@ -6,7 +6,6 @@ public class ToggleLight2D : MonoBehaviour
 {
     [SerializeField] GameObject candleA;
     private bool candleAActive = false;
-    AudioManager audioManager;
 
     void Start()
     {
@@ -14,14 +13,12 @@ public class ToggleLight2D : MonoBehaviour
     }
     void Awake()
     {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            audioManager.PlaySFX(audioManager.Light);
             if (candleAActive == false)
             {
                 candleA.gameObject.SetActive(true);
