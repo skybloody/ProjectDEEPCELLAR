@@ -57,7 +57,7 @@ public class FootstepSystem : MonoBehaviour
 
             if (enemy != null)
             {
-                // แจ้งให้ศัตรูทราบเรื่องเสียง
+                // ศัตรูได้ยิน
 
                // enemy.OnFootstepHeard(transform.position);
             }

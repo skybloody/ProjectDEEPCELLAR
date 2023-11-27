@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime;
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyM : MonoBehaviour
 {
     public Transform player;
-    public Transform DetectionPoint;
+    public Transform DetectionPoint;//
     public Transform[] waypoints;
 
     public float Speed = 3f;
@@ -18,11 +19,11 @@ public class EnemyM : MonoBehaviour
     public LayerMask playerLayer;
     private Vector3 originalPosition;
     private Vector3 lastKnownPosition;
-    private Vector2 lastMoveDirection;
+    private Vector2 lastMoveDirection;//
     private int currentWaypointIndex;
 
     private Animator anim;
-    private Rigidbody2D rb;
+    private Rigidbody2D rb;//
     private NavMeshAgent agent;
     private AudioSource audioSource;
     private bool PlayerHide;
@@ -48,6 +49,7 @@ public class EnemyM : MonoBehaviour
 
     void Update()
     {
+        ATK();
         transform.rotation = Quaternion.Euler(0, 0, 0);
         Animante();
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius, playerLayer);
@@ -76,8 +78,20 @@ public class EnemyM : MonoBehaviour
             // ไม่ตรวจสอบการชนกับ Player ที่ถูกซ่อน
             Physics2D.IgnoreLayerCollision(gameObject.layer, playerLayer, true);
         }
-
+        
     }
+
+    private void ATK()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius, playerLayer);
+        bool isPlayerInRange = colliders.Length > 0;
+
+        anim.SetBool("isAttacking", isPlayerInRange);
+
+        anim.SetFloat("AttackX", agent.velocity.x);
+        anim.SetFloat("AttackY", agent.velocity.y);
+    }
+
 
     void SetDestinationToWaypoint()
     {

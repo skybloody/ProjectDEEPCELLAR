@@ -6,8 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public GameObject interaction;
-
     public StaminaBar staminaBar;
+
     public float Speed = 1f;
     public float sprintSpeed = 5f;
     public bool isSprinting = false;
@@ -109,16 +109,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!playerHidden)
         {
-            if (isSprinting && staminaBar.currentStamina > 0)
-            {
-
-                rb.velocity = moveMent.normalized * sprintSpeed;
-            }
-            else
-            {
-
-                rb.velocity = moveMent.normalized * Speed;
-            }
+          
+            float speed = isSprinting && staminaBar.currentStamina > 0 ? sprintSpeed : Speed;
+            rb.velocity = moveMent.normalized * speed;
         }
     }
     private void Run()

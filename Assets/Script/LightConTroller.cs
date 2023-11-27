@@ -41,26 +41,20 @@ public class LightConTroller : MonoBehaviour
         // ตรวจสอบว่า collider ที่เคลื่อนออกจาก trigger นี้คือ player หรือไม่
         if (other.CompareTag("Player"))
         {
-            // ใส่โค้ดที่คุณต้องการให้เกิดขึ้นเมื่อ player ไม่ชนกับ trigger นี้
-            // เช่น การปิดแสงหรือหยุดเล่นเสียง
-            // ตัวอย่าง: เรียกฟังก์ชันปิดแสง
+         
             TurnOffLight();
         }
     }
 
-    // ตัวอย่างฟังก์ชันเปิดแสง
+    
     private void TurnOnLight()
     {
-        // เขียนโค้ดที่เปิดแสง
-        // เช่น:
-        // lightComponent.enabled = true;
+  
     }
 
-    // ตัวอย่างฟังก์ชันปิดแสง
+   
     private void TurnOffLight()
     {
-        // เขียนโค้ดที่ปิดแสง
-        // เช่น:
-        // lightComponent.enabled = false;
+        
     }
 }

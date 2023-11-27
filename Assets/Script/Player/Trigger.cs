@@ -4,29 +4,14 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
-    public AudioClip collisionSound; // เสียงที่จะเล่นเมื่อมีการชน
 
-    private AudioSource audioSource;
 
-    void Start()
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        audioSource = GetComponent<AudioSource>();
+        
     }
-
-    void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Test"))
-        {
-            // มีการชนกับ Obstacle
-            PlayCollisionSound();
-        }
-    }
-
-    void PlayCollisionSound()
-    {
-        if (collisionSound != null)
-        {
-            audioSource.PlayOneShot(collisionSound);
-        }
+        
     }
 }
