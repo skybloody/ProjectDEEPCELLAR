@@ -62,7 +62,7 @@ public class StaminaBar : MonoBehaviour
 
         while (currentStamina < maxStamina)
         {
-            currentStamina += maxStamina / 50;
+            currentStamina += maxStamina / 20;
             staminaBar.value = currentStamina;
 
 

@@ -18,6 +18,7 @@ TagManager:
   - WayPoints
   - Item
   - Test
+  - PP
   layers:
   - Default
   - TransparentFX
@@ -36,7 +37,7 @@ TagManager:
   - Prop
   - Waypoint
   - Walls
-  - 
+  - PP
   - 
   - 
   - 
