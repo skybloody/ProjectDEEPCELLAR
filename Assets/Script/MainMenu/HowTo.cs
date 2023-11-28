@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class HowTo : MonoBehaviour
 {
     public Canvas UIHowTo;
+    public GameObject Trigger;
+
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -26,5 +28,6 @@ public class HowTo : MonoBehaviour
     public void OnBackButtonClick()
     {
         UIHowTo.enabled = false;
+        Trigger.SetActive(false);
     }
 }
