@@ -13,6 +13,7 @@ public class Hiding : MonoBehaviour
     
 
     private bool playerHidden = false;
+    private bool Dialog = false;
     private bool canInteract = false;
     
 
@@ -30,7 +31,7 @@ public class Hiding : MonoBehaviour
             TogglePlayerHide();
         }
 
-        if (playerHidden)
+        if (playerHidden && Dialog)
         {
             playermovement.rb.velocity = Vector2.zero;
         }

@@ -12,7 +12,6 @@ public class HowTo : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             UIHowTo.enabled = true;
-            Debug.Log("Player entered the trigger zone");
         }
     }
 
@@ -22,12 +21,10 @@ public class HowTo : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             UIHowTo.enabled = false;
-            Debug.Log("Player exited the trigger zone");
         }
     }
     public void OnBackButtonClick()
     {
         UIHowTo.enabled = false;
-        Debug.Log("Back button clicked");
     }
 }

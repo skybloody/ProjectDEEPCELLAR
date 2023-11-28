@@ -11,19 +11,12 @@ public class PlayerMovement : MonoBehaviour
     public float Speed = 1f;
     public float sprintSpeed = 5f;
     public bool isSprinting = false;
-    public bool IsSprinting
-    {
-        get { return isSprinting; }
-    }
+    public bool IsSprinting => isSprinting;
 
-    public StaminaBar StaminaBar
-    {
-        get { return staminaBar; }
-    }
+    public StaminaBar StaminaBar => staminaBar;
 
     private bool playerHidden = false;
-    private bool canMove = true;
-
+    public bool canMove = true;
 
     private Vector2 moveMent;
     private Vector2 LastMovelDirection;
@@ -35,9 +28,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         interaction.SetActive(false);
-        rb = GetComponent <Rigidbody2D>();
-        staminaBar = StaminaBar.instance;
-       
     }
 
     void Update()
@@ -58,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
             if (!playerHidden)
             {
                 Run();
-                AniRun();
             }
         }
     }
@@ -76,11 +65,11 @@ public class PlayerMovement : MonoBehaviour
     {
         RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
 
-        if(hits.Length > 0) 
+        if (hits.Length > 0)
         {
-            foreach(RaycastHit2D rc in hits) 
+            foreach (RaycastHit2D rc in hits)
             {
-                if(rc.IsInteractable())
+                if (rc.IsInteractable())
                 {
                     rc.Interact();
                     return;
@@ -94,25 +83,19 @@ public class PlayerMovement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
+        float speed = isSprinting && staminaBar.currentStamina > 0 ? sprintSpeed : Speed;
+
         if (moveX == 0 && moveY == 0 && (moveMent.x != 0 || moveMent.y != 0))
         {
             LastMovelDirection = moveMent;
         }
 
-        moveMent.x = Input.GetAxisRaw("Horizontal");
-        moveMent.y = Input.GetAxisRaw("Vertical");
+        moveMent.x = moveX;
+        moveMent.y = moveY;
 
         moveMent.Normalize();
-    }
 
-    void AniRun()
-    {
-        if (!playerHidden)
-        {
-          
-            float speed = isSprinting && staminaBar.currentStamina > 0 ? sprintSpeed : Speed;
-            rb.velocity = moveMent.normalized * speed;
-        }
+        rb.velocity = moveMent.normalized * speed;
     }
     private void Run()
     {
@@ -126,10 +109,10 @@ public class PlayerMovement : MonoBehaviour
             isSprinting = false;
         }
     }
-    public void SetCanMove(bool move)
-    {
-        canMove = move;
-    }
+     public void SetCanMove(bool move)
+     {
+         canMove = move;
+     }
     /*private void TryCollectKey()
     {
         // ใช้ Raycast เพื่อตรวจสอบว่ามี key อยู่หน้า player หรือไม่
